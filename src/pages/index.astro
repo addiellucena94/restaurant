@@ -1,0 +1,115 @@
+---
+import "../styles/global.css";
+---
+
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+    <meta name="viewport" content="width=device-width" />
+    <meta name="generator" content={Astro.generator} />
+    <title>Los Amigos | Bar - Restaurant</title>
+  </head>
+  <body class="font-roboto">
+    <header
+      class="w-full h-16 fixed top-0 bg-gray-900 flex items-center justify-between px-10"
+    >
+      <h1 class="text-gray-100 font-bold text-xl">
+        Los Amigos | Bar-Restaurant
+      </h1>
+      <nav class="text-gray-100 flex gap-8">
+        <a href="#">Home</a>
+        <a href="#">About</a>
+        <a href="#">Opinions</a>
+        <a href="#">Contact</a>
+        <a href="#">Menu</a>
+      </nav>
+    </header>
+    <main
+      class="bg-[url('cover.jpg')] bg-center bg-cover bg-no-repeat h-screen flex flex-col items-center justify-center text-center text-gray-100"
+    >
+      <div
+        class="w-full h-screen bg-black-transparent flex flex-col items-center justify-center"
+      >
+        <p class="text-lg">Welcome to</p>
+        <h1 class="text-7xl font-bold">Los Amigos</h1>
+        <p class="text-xl">Bar-Restaurant</p>
+        <p class="py-5 text-xl w-2xl">
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Eum accusamus
+          ab ipsum. Fugiat, cum tenetur.
+        </p>
+        <a
+          href="#"
+          class="w-fit px-9 py-2 bg-green-600 rounded-md text-gray-100 text-xl"
+          >MENU</a
+        >
+        <div class="social-media"></div>
+      </div>
+    </main>
+    <section
+      class="w-full bg-[url('chef.jpg')] bg-center bg-cover bg-no-repeat h-screen flex flex-col items-center justify-center text-center text-gray-100"
+    >
+      <h2>About the chef</h2>
+      <p>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Sint porro
+        officia, ipsam praesentium natus quis doloremque aut saepe magnam, nam
+        corrupti sit doloribus atque ipsum asperiores earum eaque laboriosam!
+        Illum vitae ducimus molestias sapiente animi praesentium, consequuntur
+        est architecto accusamus sint amet quibusdam dolore laboriosam sed
+        voluptatibus mollitia voluptatum dolor dicta error. Cum soluta maxime
+        perspiciatis fugiat, iusto sunt tempore nemo. Magni tempore animi
+        ratione odit itaque iusto sequi.
+      </p>
+    </section>
+    <section>
+      <h2>Lo que nuestros clientes piensan:</h2>
+      <div class="opinion-box">
+        <div class="opinion-charcter-info">
+          <img
+            src="https://picsum.photos/seed/picsum/40/40"
+            alt="Avatar"
+            class="avatar"
+          />
+          <p class="name">Test Name</p>
+        </div>
+        <div class="opinion">
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam
+            voluptatibus, cumque, voluptates.
+          </p>
+        </div>
+      </div>
+    </section>
+    <section>
+      <div class="info">
+        <address>
+          Ma Retraiteweg 28<br />
+          Paramaribo, Suriname<br />
+          Phone: +597 123 4567<br />
+        </address>
+        <p>Horario</p>
+        <p>Miercoles - Lunes: 3:00pm - 11pm</p>
+      </div>
+      <div class="maps">
+        <iframe
+          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d828.1926902655521!2d-55.14661711324012!3d5.838259406179127!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8d0835ff0ce46eb9%3A0x43c48fafe562c025!2sLos%20Amigos!5e1!3m2!1ses!2s!4v1746020979111!5m2!1ses!2s"
+          width="400"
+          height="300"
+          style="border:0;"
+          allowfullscreen=""
+          loading="lazy"
+          referrerpolicy="no-referrer-when-downgrade"></iframe>
+      </div>
+    </section>
+    <footer
+      class="w-full h-16 bg-gray-900 flex items-center justify-center text-gray-100"
+    >
+      <p>Copyright - 2025 All Right Reserved</p>
+      <p>
+        Create by <a href="#" target="_blank" rel="noopener noreferrer"
+          >Addiel Lucena</a
+        >
+      </p>
+    </footer>
+  </body>
+</html>
