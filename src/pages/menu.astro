@@ -10,16 +10,18 @@ import "../styles/global.css";
     <meta name="generator" content={Astro.generator} />
     <title>Menu | Los amigos</title>
   </head>
-  <body class="font-roboto bg-gray-900 text-gray-200">
+  <body
+    class="font-roboto bg-gray-900 text-gray-200 flex flex-col justify-center items-center"
+  >
     <main
-      class="w-full py-16 px-10 flex flex-col items-center justify-center text-center gap-4"
+      class="w-full max-w-4xl py-16 px-10 flex flex-col items-center justify-center text-center gap-4"
     >
       <img
         src="https://addiellucena94.github.io/restaurant/icon-menu.svg"
         alt="Menu Icon"
       />
       <div>
-        <h1 class="font-bold text-6xl text-yellow-500">Los Amigos</h1>
+        <h1 class="font-bold text-5xl text-yellow-500">Los Amigos</h1>
         <p>Bar-Restaurant</p>
       </div>
       <h2 class="text-4xl text-yellow-500 font-bold border-b-2">Menu</h2>
@@ -28,22 +30,31 @@ import "../styles/global.css";
         will be added to your final bill in accordance with current regulations.
       </p>
     </main>
-    <section class="w-full flex flex-col justify-center items-center px-4">
+    <section
+      class="w-full max-w-4xl flex flex-col justify-center items-center px-4"
+    >
       <img
         src="https://addiellucena94.github.io/restaurant/food.svg"
         alt="Food icon"
         class="w-20 h-20"
       />
     </section>
-    <section class="w-full flex flex-col justify-center items-center px-4 pt-8">
+    <section
+      class="w-full max-w-4xl flex flex-col justify-center items-center px-4 pt-8"
+    >
       <h3 class="font-semibold text-xl mb-4">APPETIZERS</h3>
       <div
         class="border-t-gray-400 border-t-2 w-full py-3 flex flex-col gap-5 px-2"
       >
         <div class="flex flex-col">
           <div class="flex justify-between items-start">
-            <p class="text-lg text-yellow-500">HOUSE CROQUET</p>
-            <p class="text-lg min-w-max">120.00 SRD</p>
+            <p class="text-lg text-yellow-500 md:min-w-max">HOUSE CROQUET</p>
+            <div
+              class="md:w-full md:h-5 md:border-b-2 md:border-dashed md:mx-2"
+            >
+            </div>
+            <p class="text-lg
+              min-w-max">120.00 SRD</p>
           </div>
           <p class="font-light italic text-base">
             Delicious homemade chicken coquette made by the cheff.
@@ -51,7 +62,13 @@ import "../styles/global.css";
         </div>
         <div class="flex flex-col">
           <div class="flex justify-between items-start">
-            <p class="text-lg text-yellow-500">CHICKEN CHEESE BALL</p>
+            <p class="text-lg text-yellow-500 md:min-w-max">
+              CHICKEN CHEESE BALL
+            </p>
+            <div
+              class="md:w-full md:h-5 md:border-b-2 md:border-dashed md:mx-2"
+            >
+            </div>
             <p class="text-lg min-w-max">120.00 SRD</p>
           </div>
           <p class="font-light italic text-base">
@@ -60,7 +77,11 @@ import "../styles/global.css";
         </div>
         <div class="flex flex-col">
           <div class="flex justify-between items-start">
-            <p class="text-lg text-yellow-500">CHICKEN FINGERS</p>
+            <p class="text-lg text-yellow-500 md:min-w-max">CHICKEN FINGERS</p>
+            <div
+              class="md:w-full md:h-5 md:border-b-2 md:border-dashed md:mx-2"
+            >
+            </div>
             <p class="text-lg min-w-max">350.00 SRD</p>
           </div>
           <p class="font-light italic text-base">
@@ -69,7 +90,11 @@ import "../styles/global.css";
         </div>
         <div class="flex flex-col">
           <div class="flex justify-between items-start">
-            <p class="text-lg text-yellow-500">CHICKEN WINS</p>
+            <p class="text-lg text-yellow-500 md:min-w-max">CHICKEN WINS</p>
+            <div
+              class="md:w-full md:h-5 md:border-b-2 md:border-dashed md:mx-2"
+            >
+            </div>
             <p class="text-lg min-w-max">400.00 SRD</p>
           </div>
           <p class="font-light italic text-base">
@@ -78,7 +103,11 @@ import "../styles/global.css";
         </div>
         <div class="flex flex-col">
           <div class="flex justify-between items-start">
-            <p class="text-lg text-yellow-500">FISH FINGERS</p>
+            <p class="text-lg text-yellow-500 md:min-w-max">FISH FINGERS</p>
+            <div
+              class="md:w-full md:h-5 md:border-b-2 md:border-dashed md:mx-2"
+            >
+            </div>
             <p class="text-lg min-w-max">350.00 SRD</p>
           </div>
           <p class="font-light italic text-base">
@@ -87,7 +116,11 @@ import "../styles/global.css";
         </div>
         <div class="flex flex-col">
           <div class="flex justify-between items-start">
-            <p class="text-lg text-yellow-500">CEVICHE</p>
+            <p class="text-lg text-yellow-500 md:min-w-max">CEVICHE</p>
+            <div
+              class="md:w-full md:h-5 md:border-b-2 md:border-dashed md:mx-2"
+            >
+            </div>
             <p class="text-lg min-w-max">300.00 SRD</p>
           </div>
           <p class="font-light italic text-base">
@@ -96,7 +129,13 @@ import "../styles/global.css";
         </div>
         <div class="flex flex-col">
           <div class="flex justify-between items-start">
-            <p class="text-lg text-yellow-500">BUTTERFLY SHRIMPS</p>
+            <p class="text-lg text-yellow-500 md:min-w-max">
+              BUTTERFLY SHRIMPS
+            </p>
+            <div
+              class="md:w-full md:h-5 md:border-b-2 md:border-dashed md:mx-2"
+            >
+            </div>
             <p class="text-lg min-w-max">550.00 SRD</p>
           </div>
           <p class="font-light italic text-base">
@@ -105,7 +144,13 @@ import "../styles/global.css";
         </div>
         <div class="flex flex-col">
           <div class="flex justify-between items-start">
-            <p class="text-lg text-yellow-500">SHRIMPS COCKTAILS</p>
+            <p class="text-lg text-yellow-500 md:min-w-max">
+              SHRIMPS COCKTAILS
+            </p>
+            <div
+              class="md:w-full md:h-5 md:border-b-2 md:border-dashed md:mx-2"
+            >
+            </div>
             <p class="text-lg min-w-max">550.00 SRD</p>
           </div>
           <p class="font-light italic text-base">
@@ -114,7 +159,11 @@ import "../styles/global.css";
         </div>
         <div class="flex flex-col">
           <div class="flex justify-between items-start">
-            <p class="text-lg text-yellow-500">BRUSCHETAS</p>
+            <p class="text-lg text-yellow-500 md:min-w-max">BRUSCHETAS</p>
+            <div
+              class="md:w-full md:h-5 md:border-b-2 md:border-dashed md:mx-2"
+            >
+            </div>
             <p class="text-lg min-w-max">450.00 SRD</p>
           </div>
           <p class="font-light italic text-base">
@@ -124,15 +173,21 @@ import "../styles/global.css";
         </div>
       </div>
     </section>
-    <section class="w-full flex flex-col justify-center items-center px-4 pt-8">
+    <section
+      class="w-full max-w-4xl flex flex-col justify-center items-center px-4 pt-8"
+    >
       <h3 class="font-semibold text-xl mb-4">SOUP</h3>
       <div
         class="border-t-gray-400 border-t-2 w-full py-3 flex flex-col gap-5 px-2"
       >
         <div class="flex flex-col">
           <div class="flex justify-between items-center">
-            <p class="text-lg text-yellow-500">CHICKEN SOUP</p>
-            <p class="text-lg">300.00 SRD</p>
+            <p class="text-lg text-yellow-500 md:min-w-max">CHICKEN SOUP</p>
+            <div
+              class="md:w-full md:h-5 md:border-b-2 md:border-dashed md:mx-2"
+            >
+            </div>
+            <p class="text-lg min-w-max">300.00 SRD</p>
           </div>
           <p class="font-light italic text-base">
             Chicken, vegetables and potato soup, served with garlic bread toast.
@@ -140,8 +195,12 @@ import "../styles/global.css";
         </div>
         <div class="flex flex-col">
           <div class="flex justify-between items-center">
-            <p class="text-lg text-yellow-500">MUSHROOMS SOUP</p>
-            <p class="text-lg">300.00 SRD</p>
+            <p class="text-lg text-yellow-500 md:min-w-max">MUSHROOMS SOUP</p>
+            <div
+              class="md:w-full md:h-5 md:border-b-2 md:border-dashed md:mx-2"
+            >
+            </div>
+            <p class="text-lg min-w-max">300.00 SRD</p>
           </div>
           <p class="font-light italic text-base">
             Our creamy mushroom soup served with garlic bread toast.
@@ -149,8 +208,12 @@ import "../styles/global.css";
         </div>
         <div class="flex flex-col">
           <div class="flex justify-between items-center">
-            <p class="text-lg text-yellow-500">SHRIMPS BISQUET</p>
-            <p class="text-lg">300.00 SRD</p>
+            <p class="text-lg text-yellow-500 md:min-w-max">SHRIMPS BISQUET</p>
+            <div
+              class="md:w-full md:h-5 md:border-b-2 md:border-dashed md:mx-2"
+            >
+            </div>
+            <p class="text-lg min-w-max">300.00 SRD</p>
           </div>
           <p class="font-light italic text-base">
             Our creamy Shrimp soup, served with garlic bread toast.
@@ -158,8 +221,12 @@ import "../styles/global.css";
         </div>
         <div class="flex flex-col">
           <div class="flex justify-between items-center">
-            <p class="text-lg text-yellow-500">CUBANITOS BEANS</p>
-            <p class="text-lg">80.00 SRD</p>
+            <p class="text-lg text-yellow-500 md:min-w-max">CUBANITOS BEANS</p>
+            <div
+              class="md:w-full md:h-5 md:border-b-2 md:border-dashed md:mx-2"
+            >
+            </div>
+            <p class="text-lg min-w-max">80.00 SRD</p>
           </div>
           <p class="font-light italic text-base">
             Red or black beans,seasoned in exquisite latin style, served with
@@ -168,15 +235,21 @@ import "../styles/global.css";
         </div>
       </div>
     </section>
-    <section class="w-full flex flex-col justify-center items-center px-4 pt-8">
+    <section
+      class="w-full max-w-4xl flex flex-col justify-center items-center px-4 pt-8"
+    >
       <h3 class="font-semibold text-xl mb-4">SALADS</h3>
       <div
         class="border-t-gray-400 border-t-2 w-full py-3 flex flex-col gap-5 px-2"
       >
         <div class="flex flex-col">
           <div class="flex justify-between items-center">
-            <p class="text-lg text-yellow-500">CAESAR SALAD</p>
-            <p class="text-lg">120.00 SRD</p>
+            <p class="text-lg text-yellow-500 md:min-w-max">CAESAR SALAD</p>
+            <div
+              class="md:w-full md:h-5 md:border-b-2 md:border-dashed md:mx-2"
+            >
+            </div>
+            <p class="text-lg min-w-max">120.00 SRD</p>
           </div>
           <p class="font-light italic text-base">
             Mixture of lettuce, boiled egg, homemade croutons, turkey bacon
@@ -193,8 +266,14 @@ import "../styles/global.css";
         </div>
         <div class="flex flex-col">
           <div class="flex justify-between items-center">
-            <p class="text-lg text-yellow-500">MEDITERRANEAN SALAD</p>
-            <p class="text-lg">500.00 SRD</p>
+            <p class="text-lg text-yellow-500 md:min-w-max">
+              MEDITERRANEAN SALAD
+            </p>
+            <div
+              class="md:w-full md:h-5 md:border-b-2 md:border-dashed md:mx-2"
+            >
+            </div>
+            <p class="text-lg min-w-max">500.00 SRD</p>
           </div>
           <p class="font-light italic text-base">
             Mixture lettuce, tomato, cucumber, black olive, red onion, feta
@@ -203,15 +282,21 @@ import "../styles/global.css";
         </div>
       </div>
     </section>
-    <section class="w-full flex flex-col justify-center items-center px-4 pt-8">
+    <section
+      class="w-full max-w-4xl flex flex-col justify-center items-center px-4 pt-8"
+    >
       <h3 class="font-semibold text-xl mb-4">PASTAS</h3>
       <div
         class="border-t-gray-400 border-t-2 w-full py-3 flex flex-col gap-5 px-2"
       >
         <div class="flex flex-col">
           <div class="flex justify-between items-center">
-            <p class="text-lg text-yellow-500">PASTA ALFREDO</p>
-            <p class="text-lg">350.00 SRD</p>
+            <p class="text-lg text-yellow-500 md:min-w-max">PASTA ALFREDO</p>
+            <div
+              class="md:w-full md:h-5 md:border-b-2 md:border-dashed md:mx-2"
+            >
+            </div>
+            <p class="text-lg min-w-max">350.00 SRD</p>
           </div>
           <p class="font-light italic text-base">
             Our delicious creamy pasta, with broccoli, mushrooms, pesto and
@@ -232,7 +317,9 @@ import "../styles/global.css";
         </div>
       </div>
     </section>
-    <section class="w-full flex flex-col justify-center items-center px-4 pt-8">
+    <section
+      class="w-full max-w-4xl flex flex-col justify-center items-center px-4 pt-8"
+    >
       <h3 class="font-semibold text-xl mb-4">CHEESY FRIES</h3>
       <div
         class="border-t-gray-400 border-t-2 w-full py-3 flex flex-col gap-5 px-2"
@@ -265,15 +352,23 @@ import "../styles/global.css";
         </div>
       </div>
     </section>
-    <section class="w-full flex flex-col justify-center items-center px-4 pt-8">
+    <section
+      class="w-full max-w-4xl flex flex-col justify-center items-center px-4 pt-8"
+    >
       <h3 class="font-semibold text-xl mb-4">BURGERS</h3>
       <div
         class="border-t-gray-400 border-t-2 w-full py-3 flex flex-col gap-5 px-2"
       >
         <div class="flex flex-col">
           <div class="flex justify-between items-center">
-            <p class="text-lg text-yellow-500">CRISPY CHICKEN BURGER</p>
-            <p class="text-lg">350.00 SRD</p>
+            <p class="text-lg text-yellow-500 md:min-w-max">
+              CRISPY CHICKEN BURGER
+            </p>
+            <div
+              class="md:w-full md:h-5 md:border-b-2 md:border-dashed md:mx-2"
+            >
+            </div>
+            <p class="text-lg min-w-max">350.00 SRD</p>
           </div>
           <p class="font-light italic text-base">
             Our breaded fried chicken breats, nicely seasoned, topped with
@@ -282,8 +377,14 @@ import "../styles/global.css";
         </div>
         <div class="flex flex-col">
           <div class="flex justify-between items-center">
-            <p class="text-lg text-yellow-500">TENDERLOIN BURGER</p>
-            <p class="text-lg">350.00 SRD</p>
+            <p class="text-lg text-yellow-500 md:min-w-max">
+              TENDERLOIN BURGER
+            </p>
+            <div
+              class="md:w-full md:h-5 md:border-b-2 md:border-dashed md:mx-2"
+            >
+            </div>
+            <p class="text-lg min-w-max">350.00 SRD</p>
           </div>
           <p class="font-light italic text-base">
             Our tenderly burger seasoned to perfection topped with cheese, and
@@ -292,8 +393,12 @@ import "../styles/global.css";
         </div>
         <div class="flex flex-col">
           <div class="flex justify-between items-center">
-            <p class="text-lg text-yellow-500">CHICKEN BURGER</p>
-            <p class="text-lg">300.00 SRD</p>
+            <p class="text-lg text-yellow-500 md:min-w-max">CHICKEN BURGER</p>
+            <div
+              class="md:w-full md:h-5 md:border-b-2 md:border-dashed md:mx-2"
+            >
+            </div>
+            <p class="text-lg min-w-max">300.00 SRD</p>
           </div>
           <p class="font-light italic text-base">
             Homemade chicken burger seasoned nicely, topped with cheese, turkey
@@ -302,8 +407,12 @@ import "../styles/global.css";
         </div>
         <div class="flex flex-col">
           <div class="flex justify-between items-center">
-            <p class="text-lg text-yellow-500">BEEF BURGER</p>
-            <p class="text-lg">350.00 SRD</p>
+            <p class="text-lg text-yellow-500 md:min-w-max">BEEF BURGER</p>
+            <div
+              class="md:w-full md:h-5 md:border-b-2 md:border-dashed md:mx-2"
+            >
+            </div>
+            <p class="text-lg min-w-max">350.00 SRD</p>
           </div>
           <p class="font-light italic text-base">
             Homemade beef burger seasoned nicely, topped with cheese, turkey
@@ -312,8 +421,14 @@ import "../styles/global.css";
         </div>
         <div class="flex flex-col">
           <div class="flex justify-between items-center">
-            <p class="text-lg text-yellow-500">LOS AMIGOS SIGNATURE BURGER</p>
-            <p class="text-lg">450.00 SRD</p>
+            <p class="text-lg text-yellow-500 md:min-w-max">
+              LOS AMIGOS SIGNATURE BURGER
+            </p>
+            <div
+              class="md:w-full md:h-5 md:border-b-2 md:border-dashed md:mx-2"
+            >
+            </div>
+            <p class="text-lg min-w-max">450.00 SRD</p>
           </div>
           <p class="font-light italic text-base">
             A burger with 2 patties choice of chicken or beef or mix,seasoned to
@@ -323,8 +438,12 @@ import "../styles/global.css";
         </div>
         <div class="flex flex-col">
           <div class="flex justify-between items-center">
-            <p class="text-lg text-yellow-500">CUBAN SANDWICH</p>
-            <p class="text-lg">350.00 SRD</p>
+            <p class="text-lg text-yellow-500 md:min-w-max">CUBAN SANDWICH</p>
+            <div
+              class="md:w-full md:h-5 md:border-b-2 md:border-dashed md:mx-2"
+            >
+            </div>
+            <p class="text-lg min-w-max">350.00 SRD</p>
           </div>
           <p class="font-light italic text-base">
             Baguett, roast pork, pork ham, cheese, pickled and our special
@@ -333,15 +452,21 @@ import "../styles/global.css";
         </div>
       </div>
     </section>
-    <section class="w-full flex flex-col justify-center items-center px-4 pt-8">
+    <section
+      class="w-full max-w-4xl flex flex-col justify-center items-center px-4 pt-8"
+    >
       <h3 class="font-semibold text-xl mb-4">MAIN COURSE</h3>
       <div
         class="border-t-gray-400 border-t-2 w-full py-3 flex flex-col gap-5 px-2"
       >
         <div class="flex flex-col">
           <div class="flex justify-between items-center">
-            <p class="text-lg text-yellow-500">GRILL CHICKEN</p>
-            <p class="text-lg">500.00 SRD</p>
+            <p class="text-lg text-yellow-500 md:min-w-max">GRILL CHICKEN</p>
+            <div
+              class="md:w-full md:h-5 md:border-b-2 md:border-dashed md:mx-2"
+            >
+            </div>
+            <p class="text-lg min-w-max">500.00 SRD</p>
           </div>
           <p class="font-light italic text-base">
             Grilled chicken breast seasoned nicely, served with salad and your
@@ -350,8 +475,14 @@ import "../styles/global.css";
         </div>
         <div class="flex flex-col">
           <div class="flex justify-between items-center">
-            <p class="text-lg text-yellow-500">CHICKEN PARMIGIANO</p>
-            <p class="text-lg">650.00 SRD</p>
+            <p class="text-lg text-yellow-500 md:min-w-max">
+              CHICKEN PARMIGIANO
+            </p>
+            <div
+              class="md:w-full md:h-5 md:border-b-2 md:border-dashed md:mx-2"
+            >
+            </div>
+            <p class="text-lg min-w-max">650.00 SRD</p>
           </div>
           <p class="font-light italic text-base">
             Nicely seasoned and breaded chicken filet, toping our homemade sauce
@@ -360,8 +491,14 @@ import "../styles/global.css";
         </div>
         <div class="flex flex-col">
           <div class="flex justify-between items-center">
-            <p class="text-lg text-yellow-500">LEMON GARLIC BUTTER SHRIMPS</p>
-            <p class="text-lg">650.00 SRD</p>
+            <p class="text-lg text-yellow-500 md:min-w-max">
+              LEMON GARLIC BUTTER SHRIMPS
+            </p>
+            <div
+              class="md:w-full md:h-5 md:border-b-2 md:border-dashed md:mx-2"
+            >
+            </div>
+            <p class="text-lg min-w-max">650.00 SRD</p>
           </div>
           <p class="font-light italic text-base">
             Sauted shrimps seasoned nicely drizzled in our lemon, garlic, butter
@@ -370,8 +507,14 @@ import "../styles/global.css";
         </div>
         <div class="flex flex-col">
           <div class="flex justify-between items-center">
-            <p class="text-lg text-yellow-500">CREAMY SPICY SHRIMPS</p>
-            <p class="text-lg">650.00 SRD</p>
+            <p class="text-lg text-yellow-500 md:min-w-max">
+              CREAMY SPICY SHRIMPS
+            </p>
+            <div
+              class="md:w-full md:h-5 md:border-b-2 md:border-dashed md:mx-2"
+            >
+            </div>
+            <p class="text-lg min-w-max">650.00 SRD</p>
           </div>
           <p class="font-light italic text-base">
             Sauted shrimps seasoned nicely in our Spicy cream, paprika, onion
@@ -380,8 +523,14 @@ import "../styles/global.css";
         </div>
         <div class="flex flex-col">
           <div class="flex justify-between items-center">
-            <p class="text-lg text-yellow-500">MUSHROOMS TENDERLOIN</p>
-            <p class="text-lg">900.00 SRD</p>
+            <p class="text-lg text-yellow-500 md:min-w-max">
+              MUSHROOMS TENDERLOIN
+            </p>
+            <div
+              class="md:w-full md:h-5 md:border-b-2 md:border-dashed md:mx-2"
+            >
+            </div>
+            <p class="text-lg min-w-max">900.00 SRD</p>
           </div>
           <p class="font-light italic text-base">
             Grilled tenderloin nicely seasoned with creamy mushroom sauce served
@@ -390,8 +539,14 @@ import "../styles/global.css";
         </div>
         <div class="flex flex-col">
           <div class="flex justify-between items-center">
-            <p class="text-lg text-yellow-500">PEPPERS TENDERLOIN</p>
-            <p class="text-lg">900.00 SRD</p>
+            <p class="text-lg text-yellow-500 md:min-w-max">
+              PEPPERS TENDERLOIN
+            </p>
+            <div
+              class="md:w-full md:h-5 md:border-b-2 md:border-dashed md:mx-2"
+            >
+            </div>
+            <p class="text-lg min-w-max">900.00 SRD</p>
           </div>
           <p class="font-light italic text-base">
             Grilled tenderloin nicely seasoned with creamy pepper sauce served
@@ -400,8 +555,14 @@ import "../styles/global.css";
         </div>
         <div class="flex flex-col">
           <div class="flex justify-between items-center">
-            <p class="text-lg text-yellow-500">GARLIC PORK TENDERLOIN</p>
-            <p class="text-lg">650.00 SRD</p>
+            <p class="text-lg text-yellow-500 md:min-w-max">
+              GARLIC PORK TENDERLOIN
+            </p>
+            <div
+              class="md:w-full md:h-5 md:border-b-2 md:border-dashed md:mx-2"
+            >
+            </div>
+            <p class="text-lg min-w-max">650.00 SRD</p>
           </div>
           <p class="font-light italic text-base">
             Grilled pork tenderloin nicely seasoned with lemon and garlic,
@@ -410,8 +571,14 @@ import "../styles/global.css";
         </div>
         <div class="flex flex-col">
           <div class="flex justify-between items-center">
-            <p class="text-lg text-yellow-500">CRISPY FISH FILET</p>
-            <p class="text-lg">600.00 SRD</p>
+            <p class="text-lg text-yellow-500 md:min-w-max">
+              CRISPY FISH FILET
+            </p>
+            <div
+              class="md:w-full md:h-5 md:border-b-2 md:border-dashed md:mx-2"
+            >
+            </div>
+            <p class="text-lg min-w-max">600.00 SRD</p>
           </div>
           <p class="font-light italic text-base">
             Crispy deep fried bang bang, topped with creamy capers sauce, served
@@ -420,8 +587,12 @@ import "../styles/global.css";
         </div>
         <div class="flex flex-col">
           <div class="flex justify-between items-center">
-            <p class="text-lg text-yellow-500">OVEN FISH FILET</p>
-            <p class="text-lg">750.00 SRD</p>
+            <p class="text-lg text-yellow-500 md:min-w-max">OVEN FISH FILET</p>
+            <div
+              class="md:w-full md:h-5 md:border-b-2 md:border-dashed md:mx-2"
+            >
+            </div>
+            <p class="text-lg min-w-max">750.00 SRD</p>
           </div>
           <p class="font-light italic text-base">
             Red snapers filet,seasoned and oven nicely with onion,garlic, dill,
@@ -430,10 +601,14 @@ import "../styles/global.css";
         </div>
         <div class="flex flex-col">
           <div class="flex justify-between items-center">
-            <p class="text-lg text-yellow-500">
+            <p class="text-lg text-yellow-500 md:min-w-max">
               GRILL SALMON WITH LEMON CREAM SAUCE
             </p>
-            <p class="text-lg">850.00 SRD</p>
+            <div
+              class="md:w-full md:h-5 md:border-b-2 md:border-dashed md:mx-2"
+            >
+            </div>
+            <p class="text-lg min-w-max">850.00 SRD</p>
           </div>
           <p class="font-light italic text-base">
             Grill Salmón, seasoned nicely, served with salad and your choice
@@ -473,15 +648,23 @@ import "../styles/global.css";
         </div>
       </div>
     </section>
-    <section class="w-full flex flex-col justify-center items-center px-4 pt-8">
+    <section
+      class="w-full max-w-4xl flex flex-col justify-center items-center px-4 pt-8"
+    >
       <h3 class="font-semibold text-xl mb-4">LATIN DISHES</h3>
       <div
         class="border-t-gray-400 border-t-2 w-full py-3 flex flex-col gap-5 px-2"
       >
         <div class="flex flex-col">
           <div class="flex justify-between items-center">
-            <p class="text-lg text-yellow-500">LOS AMIGOS SPECIAL</p>
-            <p class="text-lg">600.00 SRD</p>
+            <p class="text-lg text-yellow-500 md:min-w-max">
+              LOS AMIGOS SPECIAL
+            </p>
+            <div
+              class="md:w-full md:h-5 md:border-b-2 md:border-dashed md:mx-2"
+            >
+            </div>
+            <p class="text-lg min-w-max">600.00 SRD</p>
           </div>
           <p class="font-light italic text-base">
             Delicious dish, you have de options to choice if you want with
@@ -491,8 +674,12 @@ import "../styles/global.css";
         </div>
         <div class="flex flex-col">
           <div class="flex justify-between items-center">
-            <p class="text-lg text-yellow-500">ROPA VIEJA</p>
-            <p class="text-lg">600.00 SRD</p>
+            <p class="text-lg text-yellow-500 md:min-w-max">ROPA VIEJA</p>
+            <div
+              class="md:w-full md:h-5 md:border-b-2 md:border-dashed md:mx-2"
+            >
+            </div>
+            <p class="text-lg min-w-max">600.00 SRD</p>
           </div>
           <p class="font-light italic text-base">
             Delicious dish, you have options to choice if you want with congris
@@ -502,8 +689,14 @@ import "../styles/global.css";
         </div>
         <div class="flex flex-col">
           <div class="flex justify-between items-center">
-            <p class="text-lg text-yellow-500">OVEN ROASTED PORK</p>
-            <p class="text-lg">600.00 SRD</p>
+            <p class="text-lg text-yellow-500 md:min-w-max">
+              OVEN ROASTED PORK
+            </p>
+            <div
+              class="md:w-full md:h-5 md:border-b-2 md:border-dashed md:mx-2"
+            >
+            </div>
+            <p class="text-lg min-w-max">600.00 SRD</p>
           </div>
           <p class="font-light italic text-base">
             Delicious dish, you have options to choice if you want with congris
@@ -513,8 +706,12 @@ import "../styles/global.css";
         </div>
         <div class="flex flex-col">
           <div class="flex justify-between items-center">
-            <p class="text-lg text-yellow-500">FRIES PORK RIBS</p>
-            <p class="text-lg">600.00 SRD</p>
+            <p class="text-lg text-yellow-500 md:min-w-max">FRIES PORK RIBS</p>
+            <div
+              class="md:w-full md:h-5 md:border-b-2 md:border-dashed md:mx-2"
+            >
+            </div>
+            <p class="text-lg min-w-max">600.00 SRD</p>
           </div>
           <p class="font-light italic text-base">
             Delicious dish, you have options to choice if you want with congris
@@ -524,8 +721,12 @@ import "../styles/global.css";
         </div>
         <div class="flex flex-col">
           <div class="flex justify-between items-center">
-            <p class="text-lg text-yellow-500">FRIED PORK DOUGH</p>
-            <p class="text-lg">600.00 SRD</p>
+            <p class="text-lg text-yellow-500 md:min-w-max">FRIED PORK DOUGH</p>
+            <div
+              class="md:w-full md:h-5 md:border-b-2 md:border-dashed md:mx-2"
+            >
+            </div>
+            <p class="text-lg min-w-max">600.00 SRD</p>
           </div>
           <p class="font-light italic text-base">
             Delicious dish, you have options to choice if you want with congris
@@ -535,8 +736,14 @@ import "../styles/global.css";
         </div>
         <div class="flex flex-col">
           <div class="flex justify-between items-center">
-            <p class="text-lg text-yellow-500">SPECIAL FRIED RICE</p>
-            <p class="text-lg">400.00 SRD</p>
+            <p class="text-lg text-yellow-500 md:min-w-max">
+              SPECIAL FRIED RICE
+            </p>
+            <div
+              class="md:w-full md:h-5 md:border-b-2 md:border-dashed md:mx-2"
+            >
+            </div>
+            <p class="text-lg min-w-max">400.00 SRD</p>
           </div>
           <p class="font-light italic text-base">
             Scramble egg, chicken, pork, ham, shrimp, soy sauce, red onion, all
@@ -546,8 +753,12 @@ import "../styles/global.css";
         </div>
         <div class="flex flex-col">
           <div class="flex justify-between items-center">
-            <p class="text-lg text-yellow-500">TAMALES</p>
-            <p class="text-lg">250.00 SRD</p>
+            <p class="text-lg text-yellow-500 md:min-w-max">TAMALES</p>
+            <div
+              class="md:w-full md:h-5 md:border-b-2 md:border-dashed md:mx-2"
+            >
+            </div>
+            <p class="text-lg min-w-max">250.00 SRD</p>
           </div>
           <p class="font-light italic text-base">
             Finely ground corn, exquisitely seasoned in the Cuban style.
@@ -555,8 +766,12 @@ import "../styles/global.css";
         </div>
         <div class="flex flex-col">
           <div class="flex justify-between items-center">
-            <p class="text-lg text-yellow-500">SPECIAL TAMALES</p>
-            <p class="text-lg">120.00 SRD</p>
+            <p class="text-lg text-yellow-500 md:min-w-max">SPECIAL TAMALES</p>
+            <div
+              class="md:w-full md:h-5 md:border-b-2 md:border-dashed md:mx-2"
+            >
+            </div>
+            <p class="text-lg min-w-max">120.00 SRD</p>
           </div>
           <p class="font-light italic text-base">
             Finely ground corn, exquisitely seasoned Cuban-style, served with
@@ -566,194 +781,306 @@ import "../styles/global.css";
         </div>
       </div>
     </section>
-    <section class="w-full flex flex-col justify-center items-center p-4 pt-8">
+    <section
+      class="w-full max-w-4xl flex flex-col justify-center items-center p-4 pt-8"
+    >
       <img
         src="https://addiellucena94.github.io/restaurant/cups.svg"
         alt="Food icon"
         class="w-20 h-20"
       />
     </section>
-    <section class="w-full flex flex-col justify-center items-center px-4">
+    <section
+      class="w-full max-w-4xl flex flex-col justify-center items-center px-4"
+    >
       <h3 class="font-semibold text-xl mb-4">COFFEES</h3>
       <div
         class="border-t-gray-400 border-t-2 w-full py-3 flex flex-col gap-5 px-2"
       >
         <div class="flex flex-col">
           <div class="flex justify-between items-start">
-            <p class="text-lg text-yellow-500">EXPRESSO</p>
+            <p class="text-lg text-yellow-500 md:min-w-max">EXPRESSO</p>
+            <div
+              class="md:w-full md:h-5 md:border-b-2 md:border-dashed md:mx-2"
+            >
+            </div>
             <p class="text-lg min-w-max">60.00 SRD</p>
           </div>
         </div>
         <div class="flex flex-col">
           <div class="flex justify-between items-start">
-            <p class="text-lg text-yellow-500">BLACK COFFEE</p>
+            <p class="text-lg text-yellow-500 md:min-w-max">BLACK COFFEE</p>
+            <div
+              class="md:w-full md:h-5 md:border-b-2 md:border-dashed md:mx-2"
+            >
+            </div>
             <p class="text-lg min-w-max">60.00 SRD</p>
           </div>
         </div>
         <div class="flex flex-col">
           <div class="flex justify-between items-start">
-            <p class="text-lg text-yellow-500">CAPUCCINO</p>
+            <p class="text-lg text-yellow-500 md:min-w-max">CAPUCCINO</p>
+            <div
+              class="md:w-full md:h-5 md:border-b-2 md:border-dashed md:mx-2"
+            >
+            </div>
             <p class="text-lg min-w-max">90.00 SRD</p>
           </div>
         </div>
         <div class="flex flex-col">
           <div class="flex justify-between items-start">
-            <p class="text-lg text-yellow-500">COFFEE LATTE</p>
+            <p class="text-lg text-yellow-500 md:min-w-max">COFFEE LATTE</p>
+            <div
+              class="md:w-full md:h-5 md:border-b-2 md:border-dashed md:mx-2"
+            >
+            </div>
             <p class="text-lg min-w-max">90.00 SRD</p>
           </div>
         </div>
         <div class="flex flex-col">
           <div class="flex justify-between items-start">
-            <p class="text-lg text-yellow-500">FRAPPUCCINO</p>
+            <p class="text-lg text-yellow-500 md:min-w-max">FRAPPUCCINO</p>
+            <div
+              class="md:w-full md:h-5 md:border-b-2 md:border-dashed md:mx-2"
+            >
+            </div>
             <p class="text-lg min-w-max">100.00 SRD</p>
           </div>
         </div>
       </div>
     </section>
-    <section class="w-full flex flex-col justify-center items-center px-4 pt-8">
+    <section
+      class="w-full max-w-4xl flex flex-col justify-center items-center px-4 pt-8"
+    >
       <h3 class="font-semibold text-xl mb-4">DRINKS</h3>
       <div
         class="border-t-gray-400 border-t-2 w-full py-3 flex flex-col gap-5 px-2"
       >
         <div class="flex flex-col">
           <div class="flex justify-between items-start">
-            <p class="text-lg text-yellow-500">NATURAL WATER</p>
+            <p class="text-lg text-yellow-500 md:min-w-max">NATURAL WATER</p>
+            <div
+              class="md:w-full md:h-5 md:border-b-2 md:border-dashed md:mx-2"
+            >
+            </div>
             <p class="text-lg min-w-max">35.00 SRD</p>
           </div>
         </div>
         <div class="flex flex-col">
           <div class="flex justify-between items-start">
-            <p class="text-lg text-yellow-500">SODA WATER</p>
+            <p class="text-lg text-yellow-500 md:min-w-max">SODA WATER</p>
+            <div
+              class="md:w-full md:h-5 md:border-b-2 md:border-dashed md:mx-2"
+            >
+            </div>
             <p class="text-lg min-w-max">70.00 SRD</p>
           </div>
         </div>
         <div class="flex flex-col">
           <div class="flex justify-between items-start">
-            <p class="text-lg text-yellow-500">TONIC WATER</p>
+            <p class="text-lg text-yellow-500 md:min-w-max">TONIC WATER</p>
+            <div
+              class="md:w-full md:h-5 md:border-b-2 md:border-dashed md:mx-2"
+            >
+            </div>
             <p class="text-lg min-w-max">70.00 SRD</p>
           </div>
         </div>
         <div class="flex flex-col">
           <div class="flex justify-between items-start">
-            <p class="text-lg text-yellow-500">COCA COLA</p>
+            <p class="text-lg text-yellow-500 md:min-w-max">COCA COLA</p>
+            <div
+              class="md:w-full md:h-5 md:border-b-2 md:border-dashed md:mx-2"
+            >
+            </div>
             <p class="text-lg min-w-max">70.00 SRD</p>
           </div>
         </div>
         <div class="flex flex-col">
           <div class="flex justify-between items-start">
-            <p class="text-lg text-yellow-500">COCA COLA LIGHT</p>
+            <p class="text-lg text-yellow-500 md:min-w-max">COCA COLA LIGHT</p>
+            <div
+              class="md:w-full md:h-5 md:border-b-2 md:border-dashed md:mx-2"
+            >
+            </div>
             <p class="text-lg min-w-max">70.00 SRD</p>
           </div>
         </div>
         <div class="flex flex-col">
           <div class="flex justify-between items-start">
-            <p class="text-lg text-yellow-500">SPRITE</p>
+            <p class="text-lg text-yellow-500 md:min-w-max">SPRITE</p>
+            <div
+              class="md:w-full md:h-5 md:border-b-2 md:border-dashed md:mx-2"
+            >
+            </div>
             <p class="text-lg min-w-max">75.00 SRD</p>
           </div>
         </div>
         <div class="flex flex-col">
           <div class="flex justify-between items-start">
-            <p class="text-lg text-yellow-500">XL ENERGY</p>
+            <p class="text-lg text-yellow-500 md:min-w-max">XL ENERGY</p>
+            <div
+              class="md:w-full md:h-5 md:border-b-2 md:border-dashed md:mx-2"
+            >
+            </div>
             <p class="text-lg min-w-max">85.00 SRD</p>
           </div>
         </div>
       </div>
     </section>
-    <section class="w-full flex flex-col justify-center items-center px-4 pt-8">
+    <section
+      class="w-full max-w-4xl flex flex-col justify-center items-center px-4 pt-8"
+    >
       <h3 class="font-semibold text-xl mb-4">JUICES</h3>
       <div
         class="border-t-gray-400 border-t-2 w-full py-3 flex flex-col gap-5 px-2"
       >
         <div class="flex flex-col">
           <div class="flex justify-between items-start">
-            <p class="text-lg text-yellow-500">ORANGE</p>
+            <p class="text-lg text-yellow-500 md:min-w-max">ORANGE</p>
+            <div
+              class="md:w-full md:h-5 md:border-b-2 md:border-dashed md:mx-2"
+            >
+            </div>
             <p class="text-lg min-w-max">70.00 SRD</p>
           </div>
         </div>
         <div class="flex flex-col">
           <div class="flex justify-between items-start">
-            <p class="text-lg text-yellow-500">PASSION FRUIT</p>
+            <p class="text-lg text-yellow-500 md:min-w-max">PASSION FRUIT</p>
+            <div
+              class="md:w-full md:h-5 md:border-b-2 md:border-dashed md:mx-2"
+            >
+            </div>
             <p class="text-lg min-w-max">70.00 SRD</p>
           </div>
         </div>
         <div class="flex flex-col">
           <div class="flex justify-between items-start">
-            <p class="text-lg text-yellow-500">PINEAPPLE</p>
+            <p class="text-lg text-yellow-500 md:min-w-max">PINEAPPLE</p>
+            <div
+              class="md:w-full md:h-5 md:border-b-2 md:border-dashed md:mx-2"
+            >
+            </div>
             <p class="text-lg min-w-max">70.00 SRD</p>
           </div>
         </div>
         <div class="flex flex-col">
           <div class="flex justify-between items-start">
-            <p class="text-lg text-yellow-500">PUNCH</p>
+            <p class="text-lg text-yellow-500 md:min-w-max">PUNCH</p>
+            <div
+              class="md:w-full md:h-5 md:border-b-2 md:border-dashed md:mx-2"
+            >
+            </div>
             <p class="text-lg min-w-max">70.00 SRD</p>
           </div>
         </div>
       </div>
     </section>
-    <section class="w-full flex flex-col justify-center items-center px-4 pt-8">
+    <section
+      class="w-full max-w-4xl flex flex-col justify-center items-center px-4 pt-8"
+    >
       <h3 class="font-semibold text-xl mb-4">BEERS</h3>
       <div
         class="border-t-gray-400 border-t-2 w-full py-3 flex flex-col gap-5 px-2"
       >
         <div class="flex flex-col">
           <div class="flex justify-between items-start">
-            <p class="text-lg text-yellow-500">PARBO 350ML</p>
+            <p class="text-lg text-yellow-500 md:min-w-max">PARBO 350ML</p>
+            <div
+              class="md:w-full md:h-5 md:border-b-2 md:border-dashed md:mx-2"
+            >
+            </div>
             <p class="text-lg min-w-max">90.00 SRD</p>
           </div>
         </div>
         <div class="flex flex-col">
           <div class="flex justify-between items-start">
-            <p class="text-lg text-yellow-500">PARBO 500ML</p>
+            <p class="text-lg text-yellow-500 md:min-w-max">PARBO 500ML</p>
+            <div
+              class="md:w-full md:h-5 md:border-b-2 md:border-dashed md:mx-2"
+            >
+            </div>
             <p class="text-lg min-w-max">120.00 SRD</p>
           </div>
         </div>
         <div class="flex flex-col">
           <div class="flex justify-between items-start">
-            <p class="text-lg text-yellow-500">DJOGO</p>
+            <p class="text-lg text-yellow-500 md:min-w-max">DJOGO</p>
+            <div
+              class="md:w-full md:h-5 md:border-b-2 md:border-dashed md:mx-2"
+            >
+            </div>
             <p class="text-lg min-w-max">170.00 SRD</p>
           </div>
         </div>
         <div class="flex flex-col">
           <div class="flex justify-between items-start">
-            <p class="text-lg text-yellow-500">HEINEKEN BOT</p>
+            <p class="text-lg text-yellow-500 md:min-w-max">HEINEKEN BOT</p>
+            <div
+              class="md:w-full md:h-5 md:border-b-2 md:border-dashed md:mx-2"
+            >
+            </div>
             <p class="text-lg min-w-max">120.00 SRD</p>
           </div>
         </div>
         <div class="flex flex-col">
           <div class="flex justify-between items-start">
-            <p class="text-lg text-yellow-500">HEINEKEN CAN</p>
+            <p class="text-lg text-yellow-500 md:min-w-max">HEINEKEN CAN</p>
+            <div
+              class="md:w-full md:h-5 md:border-b-2 md:border-dashed md:mx-2"
+            >
+            </div>
             <p class="text-lg min-w-max">130.00 SRD</p>
           </div>
         </div>
         <div class="flex flex-col">
           <div class="flex justify-between items-start">
-            <p class="text-lg text-yellow-500">CORONA</p>
+            <p class="text-lg text-yellow-500 md:min-w-max">CORONA</p>
+            <div
+              class="md:w-full md:h-5 md:border-b-2 md:border-dashed md:mx-2"
+            >
+            </div>
             <p class="text-lg min-w-max">130.00 SRD</p>
           </div>
         </div>
         <div class="flex flex-col">
           <div class="flex justify-between items-start">
-            <p class="text-lg text-yellow-500">CORONITA</p>
+            <p class="text-lg text-yellow-500 md:min-w-max">CORONITA</p>
+            <div
+              class="md:w-full md:h-5 md:border-b-2 md:border-dashed md:mx-2"
+            >
+            </div>
             <p class="text-lg min-w-max">100.00 SRD</p>
           </div>
         </div>
       </div>
     </section>
-    <section class="w-full flex flex-col justify-center items-center px-4 pt-8">
+    <section
+      class="w-full max-w-4xl flex flex-col justify-center items-center px-4 pt-8"
+    >
       <h3 class="font-semibold text-xl mb-4">COCKTAILS</h3>
       <div
         class="border-t-gray-400 border-t-2 w-full py-3 flex flex-col gap-5 px-2"
       >
         <div class="flex flex-col">
           <div class="flex justify-between items-start">
-            <p class="text-lg text-yellow-500">CAIPIRINHA</p>
+            <p class="text-lg text-yellow-500 md:min-w-max">CAIPIRINHA</p>
+            <div
+              class="md:w-full md:h-5 md:border-b-2 md:border-dashed md:mx-2"
+            >
+            </div>
             <p class="text-lg min-w-max">150.00 SRD</p>
           </div>
           <p class="font-light italic text-base">Cachaça 51, Lemon, Sugar</p>
         </div>
         <div class="flex flex-col">
           <div class="flex justify-between items-start">
-            <p class="text-lg text-yellow-500">CAIPIROSKA</p>
+            <p class="text-lg text-yellow-500 md:min-w-max">CAIPIROSKA</p>
+            <div
+              class="md:w-full md:h-5 md:border-b-2 md:border-dashed md:mx-2"
+            >
+            </div>
             <p class="text-lg min-w-max">150.00 SRD</p>
           </div>
           <p class="font-light italic text-base">Vodka, Lemon, Sugar.</p>
@@ -761,7 +1088,11 @@ import "../styles/global.css";
 
         <div class="flex flex-col">
           <div class="flex justify-between items-start">
-            <p class="text-lg text-yellow-500">AMARETTO SOUR</p>
+            <p class="text-lg text-yellow-500 md:min-w-max">AMARETTO SOUR</p>
+            <div
+              class="md:w-full md:h-5 md:border-b-2 md:border-dashed md:mx-2"
+            >
+            </div>
             <p class="text-lg min-w-max">200.00 SRD</p>
           </div>
           <p class="font-light italic text-base">Disaronno, Lemon, Sugar.</p>
@@ -769,7 +1100,11 @@ import "../styles/global.css";
 
         <div class="flex flex-col">
           <div class="flex justify-between items-start">
-            <p class="text-lg text-yellow-500">WHISKEY SOUR</p>
+            <p class="text-lg text-yellow-500 md:min-w-max">WHISKEY SOUR</p>
+            <div
+              class="md:w-full md:h-5 md:border-b-2 md:border-dashed md:mx-2"
+            >
+            </div>
             <p class="text-lg min-w-max">200.00 SRD</p>
           </div>
           <p class="font-light italic text-base">Whisky, Lemon, Sugar.</p>
@@ -777,7 +1112,11 @@ import "../styles/global.css";
 
         <div class="flex flex-col">
           <div class="flex justify-between items-start">
-            <p class="text-lg text-yellow-500">MOJITO</p>
+            <p class="text-lg text-yellow-500 md:min-w-max">MOJITO</p>
+            <div
+              class="md:w-full md:h-5 md:border-b-2 md:border-dashed md:mx-2"
+            >
+            </div>
             <p class="text-lg min-w-max">180.00 SRD</p>
           </div>
           <p class="font-light italic text-base">
@@ -787,7 +1126,11 @@ import "../styles/global.css";
 
         <div class="flex flex-col">
           <div class="flex justify-between items-start">
-            <p class="text-lg text-yellow-500">CUBATA</p>
+            <p class="text-lg text-yellow-500 md:min-w-max">CUBATA</p>
+            <div
+              class="md:w-full md:h-5 md:border-b-2 md:border-dashed md:mx-2"
+            >
+            </div>
             <p class="text-lg min-w-max">200.00 SRD</p>
           </div>
           <p class="font-light italic text-base">Borgoe, Cola, Lemon.</p>
@@ -795,7 +1138,11 @@ import "../styles/global.css";
 
         <div class="flex flex-col">
           <div class="flex justify-between items-start">
-            <p class="text-lg text-yellow-500">CUBA LIBRE</p>
+            <p class="text-lg text-yellow-500 md:min-w-max">CUBA LIBRE</p>
+            <div
+              class="md:w-full md:h-5 md:border-b-2 md:border-dashed md:mx-2"
+            >
+            </div>
             <p class="text-lg min-w-max">200.00 SRD</p>
           </div>
           <p class="font-light italic text-base">Havana Club, Cola, Lemon.</p>
@@ -803,7 +1150,11 @@ import "../styles/global.css";
 
         <div class="flex flex-col">
           <div class="flex justify-between items-start">
-            <p class="text-lg text-yellow-500">PIÑA COLADA</p>
+            <p class="text-lg text-yellow-500 md:min-w-max">PIÑA COLADA</p>
+            <div
+              class="md:w-full md:h-5 md:border-b-2 md:border-dashed md:mx-2"
+            >
+            </div>
             <p class="text-lg min-w-max">200.00 SRD</p>
           </div>
           <p class="font-light italic text-base">
@@ -813,7 +1164,11 @@ import "../styles/global.css";
 
         <div class="flex flex-col">
           <div class="flex justify-between items-start">
-            <p class="text-lg text-yellow-500">MARGARITA</p>
+            <p class="text-lg text-yellow-500 md:min-w-max">MARGARITA</p>
+            <div
+              class="md:w-full md:h-5 md:border-b-2 md:border-dashed md:mx-2"
+            >
+            </div>
             <p class="text-lg min-w-max">180.00 SRD</p>
           </div>
           <p class="font-light italic text-base">Tequila, Triple sec, Lemon.</p>
@@ -821,7 +1176,11 @@ import "../styles/global.css";
 
         <div class="flex flex-col">
           <div class="flex justify-between items-start">
-            <p class="text-lg text-yellow-500">TEQUILA SUNRISE</p>
+            <p class="text-lg text-yellow-500 md:min-w-max">TEQUILA SUNRISE</p>
+            <div
+              class="md:w-full md:h-5 md:border-b-2 md:border-dashed md:mx-2"
+            >
+            </div>
             <p class="text-lg min-w-max">180.00 SRD</p>
           </div>
           <p class="font-light italic text-base">
@@ -831,7 +1190,13 @@ import "../styles/global.css";
 
         <div class="flex flex-col">
           <div class="flex justify-between items-start">
-            <p class="text-lg text-yellow-500">STRAWBERRY DAIQUIRI</p>
+            <p class="text-lg text-yellow-500 md:min-w-max">
+              STRAWBERRY DAIQUIRI
+            </p>
+            <div
+              class="md:w-full md:h-5 md:border-b-2 md:border-dashed md:mx-2"
+            >
+            </div>
             <p class="text-lg min-w-max">180.00 SRD</p>
           </div>
           <p class="font-light italic text-base">
@@ -841,7 +1206,11 @@ import "../styles/global.css";
 
         <div class="flex flex-col">
           <div class="flex justify-between items-start">
-            <p class="text-lg text-yellow-500">SEX ON THE BEACH</p>
+            <p class="text-lg text-yellow-500 md:min-w-max">SEX ON THE BEACH</p>
+            <div
+              class="md:w-full md:h-5 md:border-b-2 md:border-dashed md:mx-2"
+            >
+            </div>
             <p class="text-lg min-w-max">180.00 SRD</p>
           </div>
           <p class="font-light italic text-base">
@@ -851,7 +1220,11 @@ import "../styles/global.css";
 
         <div class="flex flex-col">
           <div class="flex justify-between items-start">
-            <p class="text-lg text-yellow-500">SCREWDRIVER</p>
+            <p class="text-lg text-yellow-500 md:min-w-max">SCREWDRIVER</p>
+            <div
+              class="md:w-full md:h-5 md:border-b-2 md:border-dashed md:mx-2"
+            >
+            </div>
             <p class="text-lg min-w-max">180.00 SRD</p>
           </div>
           <p class="font-light italic text-base">Vodka, Orange juice.</p>
@@ -859,7 +1232,11 @@ import "../styles/global.css";
 
         <div class="flex flex-col">
           <div class="flex justify-between items-start">
-            <p class="text-lg text-yellow-500">COSMOPOLITAN</p>
+            <p class="text-lg text-yellow-500 md:min-w-max">COSMOPOLITAN</p>
+            <div
+              class="md:w-full md:h-5 md:border-b-2 md:border-dashed md:mx-2"
+            >
+            </div>
             <p class="text-lg min-w-max">180.00 SRD</p>
           </div>
           <p class="font-light italic text-base">
@@ -869,7 +1246,11 @@ import "../styles/global.css";
 
         <div class="flex flex-col">
           <div class="flex justify-between items-start">
-            <p class="text-lg text-yellow-500">LONG ISLAND</p>
+            <p class="text-lg text-yellow-500 md:min-w-max">LONG ISLAND</p>
+            <div
+              class="md:w-full md:h-5 md:border-b-2 md:border-dashed md:mx-2"
+            >
+            </div>
             <p class="text-lg min-w-max">350.00 SRD</p>
           </div>
           <p class="font-light italic text-base">
@@ -879,7 +1260,11 @@ import "../styles/global.css";
 
         <div class="flex flex-col">
           <div class="flex justify-between items-start">
-            <p class="text-lg text-yellow-500">GIN TONIC</p>
+            <p class="text-lg text-yellow-500 md:min-w-max">GIN TONIC</p>
+            <div
+              class="md:w-full md:h-5 md:border-b-2 md:border-dashed md:mx-2"
+            >
+            </div>
             <p class="text-lg min-w-max">200.00 SRD</p>
           </div>
           <p class="font-light italic text-base">
@@ -889,7 +1274,13 @@ import "../styles/global.css";
 
         <div class="flex flex-col">
           <div class="flex justify-between items-start">
-            <p class="text-lg text-yellow-500">GIN TONIC HENDRICKS</p>
+            <p class="text-lg text-yellow-500 md:min-w-max">
+              GIN TONIC HENDRICKS
+            </p>
+            <div
+              class="md:w-full md:h-5 md:border-b-2 md:border-dashed md:mx-2"
+            >
+            </div>
             <p class="text-lg min-w-max">350.00 SRD</p>
           </div>
           <p class="font-light italic text-base">
@@ -899,7 +1290,11 @@ import "../styles/global.css";
 
         <div class="flex flex-col">
           <div class="flex justify-between items-start">
-            <p class="text-lg text-yellow-500">GIN TONIC MARE</p>
+            <p class="text-lg text-yellow-500 md:min-w-max">GIN TONIC MARE</p>
+            <div
+              class="md:w-full md:h-5 md:border-b-2 md:border-dashed md:mx-2"
+            >
+            </div>
             <p class="text-lg min-w-max">350.00 SRD</p>
           </div>
           <p class="font-light italic text-base">
@@ -909,7 +1304,11 @@ import "../styles/global.css";
 
         <div class="flex flex-col">
           <div class="flex justify-between items-start">
-            <p class="text-lg text-yellow-500">SANGRIA</p>
+            <p class="text-lg text-yellow-500 md:min-w-max">SANGRIA</p>
+            <div
+              class="md:w-full md:h-5 md:border-b-2 md:border-dashed md:mx-2"
+            >
+            </div>
             <p class="text-lg min-w-max">200.00 SRD</p>
           </div>
           <p class="font-light italic text-base">
@@ -919,7 +1318,11 @@ import "../styles/global.css";
 
         <div class="flex flex-col">
           <div class="flex justify-between items-start">
-            <p class="text-lg text-yellow-500">NEGRONI</p>
+            <p class="text-lg text-yellow-500 md:min-w-max">NEGRONI</p>
+            <div
+              class="md:w-full md:h-5 md:border-b-2 md:border-dashed md:mx-2"
+            >
+            </div>
             <p class="text-lg min-w-max">200.00 SRD</p>
           </div>
           <p class="font-light italic text-base">
@@ -929,7 +1332,11 @@ import "../styles/global.css";
 
         <div class="flex flex-col">
           <div class="flex justify-between items-start">
-            <p class="text-lg text-yellow-500">MICHELADA</p>
+            <p class="text-lg text-yellow-500 md:min-w-max">MICHELADA</p>
+            <div
+              class="md:w-full md:h-5 md:border-b-2 md:border-dashed md:mx-2"
+            >
+            </div>
             <p class="text-lg min-w-max">200.00 SRD</p>
           </div>
           <p class="font-light italic text-base">
@@ -938,193 +1345,325 @@ import "../styles/global.css";
         </div>
       </div>
     </section>
-    <section class="w-full flex flex-col justify-center items-center px-4 pt-8">
+    <section
+      class="w-full max-w-4xl flex flex-col justify-center items-center px-4 pt-8"
+    >
       <h3 class="font-semibold text-xl mb-4">WHISKEYS</h3>
       <div
         class="border-t-gray-400 border-t-2 w-full py-3 flex flex-col gap-5 px-2"
       >
         <div class="flex flex-col">
           <div class="flex justify-between items-start">
-            <p class="text-lg text-yellow-500">JHONNY WALKER RED</p>
+            <p class="text-lg text-yellow-500 md:min-w-max">
+              JHONNY WALKER RED
+            </p>
+            <div
+              class="md:w-full md:h-5 md:border-b-2 md:border-dashed md:mx-2"
+            >
+            </div>
             <p class="text-lg min-w-max">100.00 SRD</p>
           </div>
         </div>
         <div class="flex flex-col">
           <div class="flex justify-between items-start">
-            <p class="text-lg text-yellow-500">JHONNY WALKER BLACK</p>
+            <p class="text-lg text-yellow-500 md:min-w-max">
+              JHONNY WALKER BLACK
+            </p>
+            <div
+              class="md:w-full md:h-5 md:border-b-2 md:border-dashed md:mx-2"
+            >
+            </div>
             <p class="text-lg min-w-max">140.00 SRD</p>
           </div>
         </div>
         <div class="flex flex-col">
           <div class="flex justify-between items-start">
-            <p class="text-lg text-yellow-500">JHONNY WALKER DOUBLE BLACK</p>
+            <p class="text-lg text-yellow-500 md:min-w-max">
+              JHONNY WALKER DOUBLE BLACK
+            </p>
+            <div
+              class="md:w-full md:h-5 md:border-b-2 md:border-dashed md:mx-2"
+            >
+            </div>
             <p class="text-lg min-w-max">180.00 SRD</p>
           </div>
         </div>
         <div class="flex flex-col">
           <div class="flex justify-between items-start">
-            <p class="text-lg text-yellow-500">JHONNY WALKER GOLD</p>
+            <p class="text-lg text-yellow-500 md:min-w-max">
+              JHONNY WALKER GOLD
+            </p>
+            <div
+              class="md:w-full md:h-5 md:border-b-2 md:border-dashed md:mx-2"
+            >
+            </div>
             <p class="text-lg min-w-max">250.00 SRD</p>
           </div>
         </div>
         <div class="flex flex-col">
           <div class="flex justify-between items-start">
-            <p class="text-lg text-yellow-500">JHONNY WALKER 18 YEAR</p>
+            <p class="text-lg text-yellow-500 md:min-w-max">
+              JHONNY WALKER 18 YEAR
+            </p>
+            <div
+              class="md:w-full md:h-5 md:border-b-2 md:border-dashed md:mx-2"
+            >
+            </div>
             <p class="text-lg min-w-max">360.00 SRD</p>
           </div>
         </div>
         <div class="flex flex-col">
           <div class="flex justify-between items-start">
-            <p class="text-lg text-yellow-500">JHONNY WALKER BLUE</p>
+            <p class="text-lg text-yellow-500 md:min-w-max">
+              JHONNY WALKER BLUE
+            </p>
+            <div
+              class="md:w-full md:h-5 md:border-b-2 md:border-dashed md:mx-2"
+            >
+            </div>
             <p class="text-lg min-w-max">550.00 SRD</p>
           </div>
         </div>
         <div class="flex flex-col">
           <div class="flex justify-between items-start">
-            <p class="text-lg text-yellow-500">CHIVAS REGAL 12</p>
+            <p class="text-lg text-yellow-500 md:min-w-max">CHIVAS REGAL 12</p>
+            <div
+              class="md:w-full md:h-5 md:border-b-2 md:border-dashed md:mx-2"
+            >
+            </div>
             <p class="text-lg min-w-max">140.00 SRD</p>
           </div>
         </div>
         <div class="flex flex-col">
           <div class="flex justify-between items-start">
-            <p class="text-lg text-yellow-500">CHIVAS REGAL 18</p>
+            <p class="text-lg text-yellow-500 md:min-w-max">CHIVAS REGAL 18</p>
+            <div
+              class="md:w-full md:h-5 md:border-b-2 md:border-dashed md:mx-2"
+            >
+            </div>
             <p class="text-lg min-w-max">360.00 SRD</p>
           </div>
         </div>
         <div class="flex flex-col">
           <div class="flex justify-between items-start">
-            <p class="text-lg text-yellow-500">JACK DANIELS</p>
+            <p class="text-lg text-yellow-500 md:min-w-max">JACK DANIELS</p>
+            <div
+              class="md:w-full md:h-5 md:border-b-2 md:border-dashed md:mx-2"
+            >
+            </div>
             <p class="text-lg min-w-max">150.00 SRD</p>
           </div>
         </div>
         <div class="flex flex-col">
           <div class="flex justify-between items-start">
-            <p class="text-lg text-yellow-500">JACK DANIELS HONEY</p>
+            <p class="text-lg text-yellow-500 md:min-w-max">
+              JACK DANIELS HONEY
+            </p>
+            <div
+              class="md:w-full md:h-5 md:border-b-2 md:border-dashed md:mx-2"
+            >
+            </div>
             <p class="text-lg min-w-max">170.00 SRD</p>
           </div>
         </div>
         <div class="flex flex-col">
           <div class="flex justify-between items-start">
-            <p class="text-lg text-yellow-500">OLD PARR</p>
+            <p class="text-lg text-yellow-500 md:min-w-max">OLD PARR</p>
+            <div
+              class="md:w-full md:h-5 md:border-b-2 md:border-dashed md:mx-2"
+            >
+            </div>
             <p class="text-lg min-w-max">200.00 SRD</p>
           </div>
         </div>
       </div>
     </section>
-    <section class="w-full flex flex-col justify-center items-center px-4 pt-8">
+    <section
+      class="w-full max-w-4xl flex flex-col justify-center items-center px-4 pt-8"
+    >
       <h3 class="font-semibold text-xl mb-4">VODKAS</h3>
       <div
         class="border-t-gray-400 border-t-2 w-full py-3 flex flex-col gap-5 px-2"
       >
         <div class="flex flex-col">
           <div class="flex justify-between items-center">
-            <p class="text-lg text-yellow-500">ABSOLUT</p>
+            <p class="text-lg text-yellow-500 md:min-w-max">ABSOLUT</p>
+            <div
+              class="md:w-full md:h-5 md:border-b-2 md:border-dashed md:mx-2"
+            >
+            </div>
             <p class="text-lg min-w-max">120.00 SRD</p>
           </div>
         </div>
         <div class="flex flex-col">
           <div class="flex justify-between items-center">
-            <p class="text-lg text-yellow-500">GREY GOSSE</p>
+            <p class="text-lg text-yellow-500 md:min-w-max">GREY GOSSE</p>
+            <div
+              class="md:w-full md:h-5 md:border-b-2 md:border-dashed md:mx-2"
+            >
+            </div>
             <p class="text-lg min-w-max">150.00 SRD</p>
           </div>
         </div>
         <div class="flex flex-col">
           <div class="flex justify-between items-center">
-            <p class="text-lg text-yellow-500">HAKU</p>
+            <p class="text-lg text-yellow-500 md:min-w-max">HAKU</p>
+            <div
+              class="md:w-full md:h-5 md:border-b-2 md:border-dashed md:mx-2"
+            >
+            </div>
             <p class="text-lg min-w-max">200.00 SRD</p>
           </div>
         </div>
       </div>
     </section>
-    <section class="w-full flex flex-col justify-center items-center px-4 pt-8">
+    <section
+      class="w-full max-w-4xl flex flex-col justify-center items-center px-4 pt-8"
+    >
       <h3 class="font-semibold text-xl mb-4">TEQUILAS</h3>
       <div
         class="border-t-gray-400 border-t-2 w-full py-3 flex flex-col gap-5 px-2"
       >
         <div class="flex flex-col">
           <div class="flex justify-between items-center">
-            <p class="text-lg text-yellow-500">JOSE CUERVO SILVER</p>
+            <p class="text-lg text-yellow-500 md:min-w-max">
+              JOSE CUERVO SILVER
+            </p>
+            <div
+              class="md:w-full md:h-5 md:border-b-2 md:border-dashed md:mx-2"
+            >
+            </div>
             <p class="text-lg min-w-max">90.00 SRD</p>
           </div>
         </div>
         <div class="flex flex-col">
           <div class="flex justify-between items-center">
-            <p class="text-lg text-yellow-500">JOSE CUERVO GOLD</p>
+            <p class="text-lg text-yellow-500 md:min-w-max">JOSE CUERVO GOLD</p>
+            <div
+              class="md:w-full md:h-5 md:border-b-2 md:border-dashed md:mx-2"
+            >
+            </div>
             <p class="text-lg min-w-max">120.00 SRD</p>
           </div>
         </div>
         <div class="flex flex-col">
           <div class="flex justify-between items-center">
-            <p class="text-lg text-yellow-500">EL PATRON SILVER</p>
+            <p class="text-lg text-yellow-500 md:min-w-max">EL PATRON SILVER</p>
+            <div
+              class="md:w-full md:h-5 md:border-b-2 md:border-dashed md:mx-2"
+            >
+            </div>
             <p class="text-lg">200.00 SRD</p>
           </div>
         </div>
         <div class="flex flex-col">
           <div class="flex justify-between items-center">
-            <p class="text-lg text-yellow-500">EL PATRON GOLD</p>
+            <p class="text-lg text-yellow-500 md:min-w-max">EL PATRON GOLD</p>
+            <div
+              class="md:w-full md:h-5 md:border-b-2 md:border-dashed md:mx-2"
+            >
+            </div>
             <p class="text-lg min-w-max">260.00 SRD</p>
           </div>
         </div>
       </div>
     </section>
-    <section class="w-full flex flex-col justify-center items-center px-4 pt-8">
+    <section
+      class="w-full max-w-4xl flex flex-col justify-center items-center px-4 pt-8"
+    >
       <h3 class="font-semibold text-xl mb-4">LIQUORS</h3>
       <div
         class="border-t-gray-400 border-t-2 w-full py-3 flex flex-col gap-5 px-2"
       >
         <div class="flex flex-col">
           <div class="flex justify-between items-center">
-            <p class="text-lg text-yellow-500">DRAMBUEI</p>
+            <p class="text-lg text-yellow-500 md:min-w-max">DRAMBUEI</p>
+            <div
+              class="md:w-full md:h-5 md:border-b-2 md:border-dashed md:mx-2"
+            >
+            </div>
             <p class="text-lg min-w-max">150.00 SRD</p>
           </div>
         </div>
         <div class="flex flex-col">
           <div class="flex justify-between items-center">
-            <p class="text-lg text-yellow-500">BAYLEY</p>
+            <p class="text-lg text-yellow-500 md:min-w-max">BAYLEY</p>
+            <div
+              class="md:w-full md:h-5 md:border-b-2 md:border-dashed md:mx-2"
+            >
+            </div>
             <p class="text-lg min-w-max">120.00 SRD</p>
           </div>
         </div>
         <div class="flex flex-col">
           <div class="flex justify-between items-center">
-            <p class="text-lg text-yellow-500">TEQUILA ROSE</p>
+            <p class="text-lg text-yellow-500 md:min-w-max">TEQUILA ROSE</p>
+            <div
+              class="md:w-full md:h-5 md:border-b-2 md:border-dashed md:mx-2"
+            >
+            </div>
             <p class="text-lg min-w-max">120.00 SRD</p>
           </div>
         </div>
         <div class="flex flex-col">
           <div class="flex justify-between items-center">
-            <p class="text-lg text-yellow-500">JAGERMEISTER</p>
+            <p class="text-lg text-yellow-500 md:min-w-max">JAGERMEISTER</p>
+            <div
+              class="md:w-full md:h-5 md:border-b-2 md:border-dashed md:mx-2"
+            >
+            </div>
             <p class="text-lg min-w-max">100.00 SRD</p>
           </div>
         </div>
       </div>
     </section>
-    <section class="w-full flex flex-col justify-center items-center px-4 pt-8">
-      <h3 class="font-semibold text-xl mb-4">COGNAC</h3>
+    <section
+      class="w-full max-w-4xl flex flex-col justify-center items-center px-4 pt-8"
+    >
+      <h3 class="font-semibold text-xl mb-4 md:min-w-max">COGNAC</h3>
       <div
         class="border-t-gray-400 border-t-2 w-full py-3 flex flex-col gap-5 px-2"
       >
         <div class="flex flex-col">
           <div class="flex justify-between items-center">
-            <p class="text-lg text-yellow-500">HENNESSEY VSOP</p>
+            <p class="text-lg text-yellow-500 md:min-w-max">HENNESSEY VSOP</p>
+            <div
+              class="md:w-full md:h-5 md:border-b-2 md:border-dashed md:mx-2"
+            >
+            </div>
             <p class="text-lg min-w-max">350.00 SRD</p>
           </div>
         </div>
         <div class="flex flex-col">
           <div class="flex justify-between items-center">
-            <p class="text-lg text-yellow-500">REMMY MARTIN VSOP</p>
+            <p class="text-lg text-yellow-500 md:min-w-max">
+              REMMY MARTIN VSOP
+            </p>
+            <div
+              class="md:w-full md:h-5 md:border-b-2 md:border-dashed md:mx-2"
+            >
+            </div>
             <p class="text-lg min-w-max">300.00 SRD</p>
           </div>
         </div>
       </div>
     </section>
-    <section class="w-full flex flex-col justify-center items-center px-4 pt-8">
+    <section
+      class="w-full max-w-4xl flex flex-col justify-center items-center px-4 pt-8"
+    >
       <h3 class="font-semibold text-xl mb-4">RUMS</h3>
       <div
         class="border-t-gray-400 border-t-2 w-full py-3 flex flex-col gap-5 px-2"
       >
         <div class="flex flex-col">
           <div class="flex justify-between items-center">
-            <p class="text-lg text-yellow-500">EL DORADO 12 YEAR</p>
+            <p class="text-lg text-yellow-500 md:min-w-max">
+              EL DORADO 12 YEAR
+            </p>
+            <div
+              class="md:w-full md:h-5 md:border-b-2 md:border-dashed md:mx-2"
+            >
+            </div>
             <p class="text-lg min-w-max">250.00 SRD</p>
           </div>
           <p class="font-light italic text-base">
@@ -1133,14 +1672,22 @@ import "../styles/global.css";
         </div>
         <div class="flex flex-col">
           <div class="flex justify-between items-center">
-            <p class="text-lg text-yellow-500">DIPLOMATICO</p>
+            <p class="text-lg text-yellow-500 md:min-w-max">DIPLOMATICO</p>
+            <div
+              class="md:w-full md:h-5 md:border-b-2 md:border-dashed md:mx-2"
+            >
+            </div>
             <p class="text-lg min-w-max">200.00 SRD</p>
           </div>
           <p class="font-light italic text-base">Venezuelan rum.</p>
         </div>
         <div class="flex flex-col">
           <div class="flex justify-between items-center">
-            <p class="text-lg text-yellow-500">CUBAY 10 YEAR</p>
+            <p class="text-lg text-yellow-500 md:min-w-max">CUBAY 10 YEAR</p>
+            <div
+              class="md:w-full md:h-5 md:border-b-2 md:border-dashed md:mx-2"
+            >
+            </div>
             <p class="text-lg min-w-max">200.00 SRD</p>
           </div>
           <p class="font-light italic text-base">
@@ -1149,56 +1696,94 @@ import "../styles/global.css";
         </div>
         <div class="flex flex-col">
           <div class="flex justify-between items-center">
-            <p class="text-lg text-yellow-500">HAVANA CLUB 7 YEAR</p>
+            <p class="text-lg text-yellow-500 md:min-w-max">
+              HAVANA CLUB 7 YEAR
+            </p>
+            <div
+              class="md:w-full md:h-5 md:border-b-2 md:border-dashed md:mx-2"
+            >
+            </div>
             <p class="text-lg min-w-max">250.00 SRD</p>
           </div>
           <p class="font-light italic text-base">Cuban rum aged for 7 years.</p>
         </div>
       </div>
     </section>
-    <section class="w-full flex flex-col justify-center items-center px-4 pt-8">
+    <section
+      class="w-full max-w-4xl flex flex-col justify-center items-center px-4 pt-8"
+    >
       <h3 class="font-semibold text-xl mb-4">WINES</h3>
       <div
         class="border-t-gray-400 border-t-2 w-full py-3 flex flex-col gap-5 px-2"
       >
         <div class="flex flex-col">
           <div class="flex justify-between items-start">
-            <p class="text-lg text-yellow-500">CASILLERO DEL DIABLO</p>
+            <p class="text-lg text-yellow-500 md:min-w-max">
+              CASILLERO DEL DIABLO
+            </p>
+            <div
+              class="md:w-full md:h-5 md:border-b-2 md:border-dashed md:mx-2"
+            >
+            </div>
             <p class="text-lg min-w-max">160.00 SRD</p>
           </div>
           <p class="font-light italic text-base">Cabernet Sauvignon.</p>
         </div>
         <div class="flex flex-col">
           <div class="flex justify-between items-start">
-            <p class="text-lg text-yellow-500">CASILLERO DEL DIABLO</p>
+            <p class="text-lg text-yellow-500 md:min-w-max">
+              CASILLERO DEL DIABLO
+            </p>
+            <div
+              class="md:w-full md:h-5 md:border-b-2 md:border-dashed md:mx-2"
+            >
+            </div>
             <p class="text-lg min-w-max">160.00 SRD</p>
           </div>
           <p class="font-light italic text-base">Merlot.</p>
         </div>
         <div class="flex flex-col">
           <div class="flex justify-between items-start">
-            <p class="text-lg text-yellow-500">CASILLERO DEL DIABLO</p>
+            <p class="text-lg text-yellow-500 md:min-w-max">
+              CASILLERO DEL DIABLO
+            </p>
+            <div
+              class="md:w-full md:h-5 md:border-b-2 md:border-dashed md:mx-2"
+            >
+            </div>
             <p class="text-lg min-w-max">160.00 SRD</p>
           </div>
           <p class="font-light italic text-base">Chardonnay.</p>
         </div>
         <div class="flex flex-col">
           <div class="flex justify-between items-start">
-            <p class="text-lg text-yellow-500">BAREFOOT</p>
+            <p class="text-lg text-yellow-500 md:min-w-max">BAREFOOT</p>
+            <div
+              class="md:w-full md:h-5 md:border-b-2 md:border-dashed md:mx-2"
+            >
+            </div>
             <p class="text-lg min-w-max">160.00 SRD</p>
           </div>
           <p class="font-light italic text-base">Sauvignon Blanc.</p>
         </div>
         <div class="flex flex-col">
           <div class="flex justify-between items-start">
-            <p class="text-lg text-yellow-500">PIERRE MARCELL</p>
+            <p class="text-lg text-yellow-500 md:min-w-max">PIERRE MARCELL</p>
+            <div
+              class="md:w-full md:h-5 md:border-b-2 md:border-dashed md:mx-2"
+            >
+            </div>
             <p class="text-lg min-w-max">160.00 SRD</p>
           </div>
           <p class="font-light italic text-base">Sweet red.</p>
         </div>
         <div class="flex flex-col">
           <div class="flex justify-between items-start">
-            <p class="text-lg text-yellow-500">PIERRE MARCELL</p>
+            <p class="text-lg text-yellow-500 md:min-w-max">PIERRE MARCELL</p>
+            <div
+              class="md:w-full md:h-5 md:border-b-2 md:border-dashed md:mx-2"
+            >
+            </div>
             <p class="text-lg min-w-max">160.00 SRD</p>
           </div>
           <p class="font-light italic text-base">Sweet white.</p>
