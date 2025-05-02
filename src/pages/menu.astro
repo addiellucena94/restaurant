@@ -5,28 +5,38 @@ import "../styles/global.css";
 <html lang="en">
   <head>
     <meta charset="utf-8" />
-    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+    <link rel="icon" type="image/svg+xml" href="icon-menu.svg" />
     <meta name="viewport" content="width=device-width" />
     <meta name="generator" content={Astro.generator} />
     <title>Menu | Los amigos</title>
   </head>
   <body class="font-roboto bg-gray-900 text-gray-200">
     <main
-      class="w-full p-16 flex flex-col items-center justify-center text-center gap-4"
+      class="w-full py-16 px-10 flex flex-col items-center justify-center text-center gap-4"
     >
-      <img src="icon-menu.svg" alt="Menu Icon" />
+      <img
+        src="https://addiellucena94.github.io/restaurant/icon-menu.svg"
+        alt="Menu Icon"
+      />
       <div>
-        <h1 class="font-bold text-4xl text-yellow-500">Los Amigos</h1>
+        <h1 class="font-bold text-6xl text-yellow-500">Los Amigos</h1>
         <p>Bar-Restaurant</p>
       </div>
-      <h2 class="text-4xl text-yellow-500 font-bold">Menu</h2>
+      <h2 class="text-4xl text-yellow-500 font-bold border-b-2">Menu</h2>
       <p class="text-gray-400">
         The prices listed on the menu do not include taxes. A --10% local tax**
         will be added to your final bill in accordance with current regulations.
       </p>
     </main>
     <section class="w-full flex flex-col justify-center items-center px-4">
-      <h3 class="font-semibold text-xl mb-2">APPETIZERS</h3>
+      <img
+        src="https://addiellucena94.github.io/restaurant/food.svg"
+        alt="Food icon"
+        class="w-20 h-20"
+      />
+    </section>
+    <section class="w-full flex flex-col justify-center items-center px-4 pt-8">
+      <h3 class="font-semibold text-xl mb-4">APPETIZERS</h3>
       <div
         class="border-t-gray-400 border-t-2 w-full py-3 flex flex-col gap-5 px-2"
       >
@@ -36,125 +46,535 @@ import "../styles/global.css";
             <p class="text-lg min-w-max">120.00 SRD</p>
           </div>
           <p class="font-light italic text-base">
-            Delicious homemade chicken coquette made by the cheff
+            Delicious homemade chicken coquette made by the cheff.
+          </p>
+        </div>
+        <div class="flex flex-col">
+          <div class="flex justify-between items-start">
+            <p class="text-lg text-yellow-500">CHICKEN CHEESE BALL</p>
+            <p class="text-lg min-w-max">120.00 SRD</p>
+          </div>
+          <p class="font-light italic text-base">
+            Chicken cheese ball that are crunchy from outside and cheese inside.
+          </p>
+        </div>
+        <div class="flex flex-col">
+          <div class="flex justify-between items-start">
+            <p class="text-lg text-yellow-500">CHICKEN FINGERS</p>
+            <p class="text-lg min-w-max">350.00 SRD</p>
+          </div>
+          <p class="font-light italic text-base">
+            Our breaded fried chicken breast nicely seasoned.
+          </p>
+        </div>
+        <div class="flex flex-col">
+          <div class="flex justify-between items-start">
+            <p class="text-lg text-yellow-500">CHICKEN WINS</p>
+            <p class="text-lg min-w-max">400.00 SRD</p>
+          </div>
+          <p class="font-light italic text-base">
+            8pcs, deep fried, garnish in hot and sour sauce.
+          </p>
+        </div>
+        <div class="flex flex-col">
+          <div class="flex justify-between items-start">
+            <p class="text-lg text-yellow-500">FISH FINGERS</p>
+            <p class="text-lg min-w-max">350.00 SRD</p>
+          </div>
+          <p class="font-light italic text-base">
+            Our breaded fried fish nicely seasoned.
+          </p>
+        </div>
+        <div class="flex flex-col">
+          <div class="flex justify-between items-start">
+            <p class="text-lg text-yellow-500">CEVICHE</p>
+            <p class="text-lg min-w-max">300.00 SRD</p>
+          </div>
+          <p class="font-light italic text-base">
+            our house picked fish with onion, lemon and cilantro.
+          </p>
+        </div>
+        <div class="flex flex-col">
+          <div class="flex justify-between items-start">
+            <p class="text-lg text-yellow-500">BUTTERFLY SHRIMPS</p>
+            <p class="text-lg min-w-max">550.00 SRD</p>
+          </div>
+          <p class="font-light italic text-base">
+            Our breaded deep fried, garnish in sweet peppers sauces.
+          </p>
+        </div>
+        <div class="flex flex-col">
+          <div class="flex justify-between items-start">
+            <p class="text-lg text-yellow-500">SHRIMPS COCKTAILS</p>
+            <p class="text-lg min-w-max">550.00 SRD</p>
+          </div>
+          <p class="font-light italic text-base">
+            Delicious shrimps cocktails with our special sauce.
+          </p>
+        </div>
+        <div class="flex flex-col">
+          <div class="flex justify-between items-start">
+            <p class="text-lg text-yellow-500">BRUSCHETAS</p>
+            <p class="text-lg min-w-max">450.00 SRD</p>
+          </div>
+          <p class="font-light italic text-base">
+            3pcs sliced bread, tomato, paprika, olive,basil and topped with
+            smoked salmon.
           </p>
         </div>
       </div>
     </section>
-    <section class="w-full flex flex-col justify-center items-center px-4">
-      <h3 class="font-semibold text-xl mb-2">SOUP</h3>
+    <section class="w-full flex flex-col justify-center items-center px-4 pt-8">
+      <h3 class="font-semibold text-xl mb-4">SOUP</h3>
       <div
         class="border-t-gray-400 border-t-2 w-full py-3 flex flex-col gap-5 px-2"
       >
         <div class="flex flex-col">
           <div class="flex justify-between items-center">
-            <p class="text-lg text-yellow-500">HOUSE CROQUET</p>
-            <p class="text-lg">120.00 SRD</p>
+            <p class="text-lg text-yellow-500">CHICKEN SOUP</p>
+            <p class="text-lg">300.00 SRD</p>
           </div>
           <p class="font-light italic text-base">
-            Delicious homemade chicken coquette made by the cheff
+            Chicken, vegetables and potato soup, served with garlic bread toast.
+          </p>
+        </div>
+        <div class="flex flex-col">
+          <div class="flex justify-between items-center">
+            <p class="text-lg text-yellow-500">MUSHROOMS SOUP</p>
+            <p class="text-lg">300.00 SRD</p>
+          </div>
+          <p class="font-light italic text-base">
+            Our creamy mushroom soup served with garlic bread toast.
+          </p>
+        </div>
+        <div class="flex flex-col">
+          <div class="flex justify-between items-center">
+            <p class="text-lg text-yellow-500">SHRIMPS BISQUET</p>
+            <p class="text-lg">300.00 SRD</p>
+          </div>
+          <p class="font-light italic text-base">
+            Our creamy Shrimp soup, served with garlic bread toast.
+          </p>
+        </div>
+        <div class="flex flex-col">
+          <div class="flex justify-between items-center">
+            <p class="text-lg text-yellow-500">CUBANITOS BEANS</p>
+            <p class="text-lg">80.00 SRD</p>
+          </div>
+          <p class="font-light italic text-base">
+            Red or black beans,seasoned in exquisite latin style, served with
+            garlic bread toast.
           </p>
         </div>
       </div>
     </section>
-    <section class="w-full flex flex-col justify-center items-center px-4">
-      <h3 class="font-semibold text-xl mb-2">SALADS</h3>
+    <section class="w-full flex flex-col justify-center items-center px-4 pt-8">
+      <h3 class="font-semibold text-xl mb-4">SALADS</h3>
       <div
         class="border-t-gray-400 border-t-2 w-full py-3 flex flex-col gap-5 px-2"
       >
         <div class="flex flex-col">
           <div class="flex justify-between items-center">
-            <p class="text-lg text-yellow-500">HOUSE CROQUET</p>
+            <p class="text-lg text-yellow-500">CAESAR SALAD</p>
             <p class="text-lg">120.00 SRD</p>
           </div>
           <p class="font-light italic text-base">
-            Delicious homemade chicken coquette made by the cheff
+            Mixture of lettuce, boiled egg, homemade croutons, turkey bacon
+            served with parmesan cheese and traditional dressing CESAR.
+          </p>
+          <div class="flex items-center justify-between">
+            <p>- Add CHICKEN</p>
+            <p>80.00 SRD</p>
+          </div>
+          <div class="flex items-center justify-between">
+            <p>- Add SHRIMPS (4pcs)</p>
+            <p>150.00 SRD</p>
+          </div>
+        </div>
+        <div class="flex flex-col">
+          <div class="flex justify-between items-center">
+            <p class="text-lg text-yellow-500">MEDITERRANEAN SALAD</p>
+            <p class="text-lg">500.00 SRD</p>
+          </div>
+          <p class="font-light italic text-base">
+            Mixture lettuce, tomato, cucumber, black olive, red onion, feta
+            cheese served with vinaigrette sauce.
           </p>
         </div>
       </div>
     </section>
-    <section class="w-full flex flex-col justify-center items-center px-4">
-      <h3 class="font-semibold text-xl mb-2">PASTAS</h3>
+    <section class="w-full flex flex-col justify-center items-center px-4 pt-8">
+      <h3 class="font-semibold text-xl mb-4">PASTAS</h3>
       <div
         class="border-t-gray-400 border-t-2 w-full py-3 flex flex-col gap-5 px-2"
       >
         <div class="flex flex-col">
           <div class="flex justify-between items-center">
-            <p class="text-lg text-yellow-500">HOUSE CROQUET</p>
-            <p class="text-lg">120.00 SRD</p>
+            <p class="text-lg text-yellow-500">PASTA ALFREDO</p>
+            <p class="text-lg">350.00 SRD</p>
           </div>
           <p class="font-light italic text-base">
-            Delicious homemade chicken coquette made by the cheff
+            Our delicious creamy pasta, with broccoli, mushrooms, pesto and
+            parmesan cheese.
           </p>
+          <div class="flex items-center justify-between">
+            <p>- Add CHICKEN</p>
+            <p>60.00 SRD</p>
+          </div>
+          <div class="flex items-center justify-between">
+            <p>- Add BEEF</p>
+            <p>100.00 SRD</p>
+          </div>
+          <div class="flex items-center justify-between">
+            <p>- Add SHRIMPS (4pcs)</p>
+            <p>150.00 SRD</p>
+          </div>
         </div>
       </div>
     </section>
-    <section class="w-full flex flex-col justify-center items-center px-4">
-      <h3 class="font-semibold text-xl mb-2">CHEESY FRIES</h3>
+    <section class="w-full flex flex-col justify-center items-center px-4 pt-8">
+      <h3 class="font-semibold text-xl mb-4">CHEESY FRIES</h3>
+      <div
+        class="border-t-gray-400 border-t-2 w-full py-3 flex flex-col gap-5 px-2"
+      >
+        <div class="flex flex-col">
+          <p class="font-light italic text-base">
+            French fries, topped with cheese,onion, paprika, special sauce , ADD
+            AS REQUESTED.
+          </p>
+          <div class="flex items-center justify-between">
+            <p>- CHICKEN CHEESY FRIES</p>
+            <p>350.00 SRD</p>
+          </div>
+          <div class="flex items-center justify-between">
+            <p>- PORK CHEESY FRIES</p>
+            <p>350.00 SRD</p>
+          </div>
+          <div class="flex items-center justify-between">
+            <p>- BEEF CHEESY FRIES</p>
+            <p>400.00 SRD</p>
+          </div>
+          <div class="flex items-center justify-between">
+            <p>- VEGGIES CHEESY FRIES</p>
+            <p>400.00 SRD</p>
+          </div>
+          <div class="flex items-center justify-between">
+            <p>- SHRIMPS CHEESY FRIES</p>
+            <p>450.00 SRD</p>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="w-full flex flex-col justify-center items-center px-4 pt-8">
+      <h3 class="font-semibold text-xl mb-4">BURGERS</h3>
       <div
         class="border-t-gray-400 border-t-2 w-full py-3 flex flex-col gap-5 px-2"
       >
         <div class="flex flex-col">
           <div class="flex justify-between items-center">
-            <p class="text-lg text-yellow-500">HOUSE CROQUET</p>
-            <p class="text-lg">120.00 SRD</p>
+            <p class="text-lg text-yellow-500">CRISPY CHICKEN BURGER</p>
+            <p class="text-lg">350.00 SRD</p>
           </div>
           <p class="font-light italic text-base">
-            Delicious homemade chicken coquette made by the cheff
+            Our breaded fried chicken breats, nicely seasoned, topped with
+            tomato, lettuce and cheese.
+          </p>
+        </div>
+        <div class="flex flex-col">
+          <div class="flex justify-between items-center">
+            <p class="text-lg text-yellow-500">TENDERLOIN BURGER</p>
+            <p class="text-lg">350.00 SRD</p>
+          </div>
+          <p class="font-light italic text-base">
+            Our tenderly burger seasoned to perfection topped with cheese, and
+            homemade sauce.
+          </p>
+        </div>
+        <div class="flex flex-col">
+          <div class="flex justify-between items-center">
+            <p class="text-lg text-yellow-500">CHICKEN BURGER</p>
+            <p class="text-lg">300.00 SRD</p>
+          </div>
+          <p class="font-light italic text-base">
+            Homemade chicken burger seasoned nicely, topped with cheese, turkey
+            bacon, toma,lettuce, cucumber and drizzling in our homemade sauce.
+          </p>
+        </div>
+        <div class="flex flex-col">
+          <div class="flex justify-between items-center">
+            <p class="text-lg text-yellow-500">BEEF BURGER</p>
+            <p class="text-lg">350.00 SRD</p>
+          </div>
+          <p class="font-light italic text-base">
+            Homemade beef burger seasoned nicely, topped with cheese, turkey
+            bacon, toma, lettuce, cucumber and drizzling in our homemade sauce.
+          </p>
+        </div>
+        <div class="flex flex-col">
+          <div class="flex justify-between items-center">
+            <p class="text-lg text-yellow-500">LOS AMIGOS SIGNATURE BURGER</p>
+            <p class="text-lg">450.00 SRD</p>
+          </div>
+          <p class="font-light italic text-base">
+            A burger with 2 patties choice of chicken or beef or mix,seasoned to
+            perfection topped with cheese, egg ,turkey bacon, lettuce, tomato,
+            cucumber, and drizzling in our homemade sauce.
+          </p>
+        </div>
+        <div class="flex flex-col">
+          <div class="flex justify-between items-center">
+            <p class="text-lg text-yellow-500">CUBAN SANDWICH</p>
+            <p class="text-lg">350.00 SRD</p>
+          </div>
+          <p class="font-light italic text-base">
+            Baguett, roast pork, pork ham, cheese, pickled and our special
+            homemade sauce.
           </p>
         </div>
       </div>
     </section>
-    <section class="w-full flex flex-col justify-center items-center px-4">
-      <h3 class="font-semibold text-xl mb-2">BURGERS</h3>
+    <section class="w-full flex flex-col justify-center items-center px-4 pt-8">
+      <h3 class="font-semibold text-xl mb-4">MAIN COURSE</h3>
       <div
         class="border-t-gray-400 border-t-2 w-full py-3 flex flex-col gap-5 px-2"
       >
         <div class="flex flex-col">
           <div class="flex justify-between items-center">
-            <p class="text-lg text-yellow-500">HOUSE CROQUET</p>
-            <p class="text-lg">120.00 SRD</p>
+            <p class="text-lg text-yellow-500">GRILL CHICKEN</p>
+            <p class="text-lg">500.00 SRD</p>
           </div>
           <p class="font-light italic text-base">
-            Delicious homemade chicken coquette made by the cheff
+            Grilled chicken breast seasoned nicely, served with salad and your
+            choice of side dish.
           </p>
+        </div>
+        <div class="flex flex-col">
+          <div class="flex justify-between items-center">
+            <p class="text-lg text-yellow-500">CHICKEN PARMIGIANO</p>
+            <p class="text-lg">650.00 SRD</p>
+          </div>
+          <p class="font-light italic text-base">
+            Nicely seasoned and breaded chicken filet, toping our homemade sauce
+            and cheese, served with salad and your choice dish.
+          </p>
+        </div>
+        <div class="flex flex-col">
+          <div class="flex justify-between items-center">
+            <p class="text-lg text-yellow-500">LEMON GARLIC BUTTER SHRIMPS</p>
+            <p class="text-lg">650.00 SRD</p>
+          </div>
+          <p class="font-light italic text-base">
+            Sauted shrimps seasoned nicely drizzled in our lemon, garlic, butter
+            sauce, served with salad and your choice dish.
+          </p>
+        </div>
+        <div class="flex flex-col">
+          <div class="flex justify-between items-center">
+            <p class="text-lg text-yellow-500">CREAMY SPICY SHRIMPS</p>
+            <p class="text-lg">650.00 SRD</p>
+          </div>
+          <p class="font-light italic text-base">
+            Sauted shrimps seasoned nicely in our Spicy cream, paprika, onion
+            and served with salad and your choice dish.
+          </p>
+        </div>
+        <div class="flex flex-col">
+          <div class="flex justify-between items-center">
+            <p class="text-lg text-yellow-500">MUSHROOMS TENDERLOIN</p>
+            <p class="text-lg">900.00 SRD</p>
+          </div>
+          <p class="font-light italic text-base">
+            Grilled tenderloin nicely seasoned with creamy mushroom sauce served
+            with salad and your choice dish.
+          </p>
+        </div>
+        <div class="flex flex-col">
+          <div class="flex justify-between items-center">
+            <p class="text-lg text-yellow-500">PEPPERS TENDERLOIN</p>
+            <p class="text-lg">900.00 SRD</p>
+          </div>
+          <p class="font-light italic text-base">
+            Grilled tenderloin nicely seasoned with creamy pepper sauce served
+            with salad and your choice dish.
+          </p>
+        </div>
+        <div class="flex flex-col">
+          <div class="flex justify-between items-center">
+            <p class="text-lg text-yellow-500">GARLIC PORK TENDERLOIN</p>
+            <p class="text-lg">650.00 SRD</p>
+          </div>
+          <p class="font-light italic text-base">
+            Grilled pork tenderloin nicely seasoned with lemon and garlic,
+            served with salad and your choice dish.
+          </p>
+        </div>
+        <div class="flex flex-col">
+          <div class="flex justify-between items-center">
+            <p class="text-lg text-yellow-500">CRISPY FISH FILET</p>
+            <p class="text-lg">600.00 SRD</p>
+          </div>
+          <p class="font-light italic text-base">
+            Crispy deep fried bang bang, topped with creamy capers sauce, served
+            with salad and your choice dish.
+          </p>
+        </div>
+        <div class="flex flex-col">
+          <div class="flex justify-between items-center">
+            <p class="text-lg text-yellow-500">OVEN FISH FILET</p>
+            <p class="text-lg">750.00 SRD</p>
+          </div>
+          <p class="font-light italic text-base">
+            Red snapers filet,seasoned and oven nicely with onion,garlic, dill,
+            paprika, olive oil, served with salad and your choice dish.
+          </p>
+        </div>
+        <div class="flex flex-col">
+          <div class="flex justify-between items-center">
+            <p class="text-lg text-yellow-500">
+              GRILL SALMON WITH LEMON CREAM SAUCE
+            </p>
+            <p class="text-lg">850.00 SRD</p>
+          </div>
+          <p class="font-light italic text-base">
+            Grill Salmón, seasoned nicely, served with salad and your choice
+            dish.
+          </p>
+        </div>
+        <div class="flex flex-col">
+          <p class="font-bold text-yellow-500 text-xl">SIDES:</p>
+          <div class="flex items-center justify-between">
+            <p>WHITE RICE</p>
+            <p></p>
+          </div>
+          <div class="flex items-center justify-between">
+            <p>FRIED RICE</p>
+            <p></p>
+          </div>
+          <div class="flex items-center justify-between">
+            <p>CONGRIS RICE</p>
+            <p></p>
+          </div>
+          <div class="flex items-center justify-between">
+            <p>GARLIC BREAD</p>
+            <p></p>
+          </div>
+          <div class="flex items-center justify-between">
+            <p>FRENCH FRIES</p>
+            <p></p>
+          </div>
+          <div class="flex items-center justify-between">
+            <p>WEDGES</p>
+            <p></p>
+          </div>
+          <div class="flex items-center justify-between">
+            <p>MASHED POTATOES</p>
+            <p></p>
+          </div>
         </div>
       </div>
     </section>
-    <section class="w-full flex flex-col justify-center items-center px-4">
-      <h3 class="font-semibold text-xl mb-2">MAIN COURSE</h3>
+    <section class="w-full flex flex-col justify-center items-center px-4 pt-8">
+      <h3 class="font-semibold text-xl mb-4">LATIN DISHES</h3>
       <div
         class="border-t-gray-400 border-t-2 w-full py-3 flex flex-col gap-5 px-2"
       >
         <div class="flex flex-col">
           <div class="flex justify-between items-center">
-            <p class="text-lg text-yellow-500">HOUSE CROQUET</p>
-            <p class="text-lg">120.00 SRD</p>
+            <p class="text-lg text-yellow-500">LOS AMIGOS SPECIAL</p>
+            <p class="text-lg">600.00 SRD</p>
           </div>
           <p class="font-light italic text-base">
-            Delicious homemade chicken coquette made by the cheff
+            Delicious dish, you have de options to choice if you want with
+            congris or white rice/cubanitos red or black beans, fajitas pork or
+            beef or chicken served with ripe bananas fries and salad.
           </p>
         </div>
-      </div>
-    </section>
-    <section class="w-full flex flex-col justify-center items-center px-4">
-      <h3 class="font-semibold text-xl mb-2">LATIN DISHES</h3>
-      <div
-        class="border-t-gray-400 border-t-2 w-full py-3 flex flex-col gap-5 px-2"
-      >
         <div class="flex flex-col">
           <div class="flex justify-between items-center">
-            <p class="text-lg text-yellow-500">HOUSE CROQUET</p>
+            <p class="text-lg text-yellow-500">ROPA VIEJA</p>
+            <p class="text-lg">600.00 SRD</p>
+          </div>
+          <p class="font-light italic text-base">
+            Delicious dish, you have options to choice if you want with congris
+            or white rice/cubanitos red or black beans, served with ripe bananas
+            fries and salad.
+          </p>
+        </div>
+        <div class="flex flex-col">
+          <div class="flex justify-between items-center">
+            <p class="text-lg text-yellow-500">OVEN ROASTED PORK</p>
+            <p class="text-lg">600.00 SRD</p>
+          </div>
+          <p class="font-light italic text-base">
+            Delicious dish, you have options to choice if you want with congris
+            or white rice/cubanitos red or black beans, served with ripe bananas
+            fries and salad.
+          </p>
+        </div>
+        <div class="flex flex-col">
+          <div class="flex justify-between items-center">
+            <p class="text-lg text-yellow-500">FRIES PORK RIBS</p>
+            <p class="text-lg">600.00 SRD</p>
+          </div>
+          <p class="font-light italic text-base">
+            Delicious dish, you have options to choice if you want with congris
+            or white rice/cubanitos red or black beans, served with ripe bananas
+            fries and salad.
+          </p>
+        </div>
+        <div class="flex flex-col">
+          <div class="flex justify-between items-center">
+            <p class="text-lg text-yellow-500">FRIED PORK DOUGH</p>
+            <p class="text-lg">600.00 SRD</p>
+          </div>
+          <p class="font-light italic text-base">
+            Delicious dish, you have options to choice if you want with congris
+            or white rice/cubanitos red or black beans, served with ripe bananas
+            fries and salad.
+          </p>
+        </div>
+        <div class="flex flex-col">
+          <div class="flex justify-between items-center">
+            <p class="text-lg text-yellow-500">SPECIAL FRIED RICE</p>
+            <p class="text-lg">400.00 SRD</p>
+          </div>
+          <p class="font-light italic text-base">
+            Scramble egg, chicken, pork, ham, shrimp, soy sauce, red onion, all
+            seasoned in the best latin style, and served with salad and ripe
+            bananas fries.
+          </p>
+        </div>
+        <div class="flex flex-col">
+          <div class="flex justify-between items-center">
+            <p class="text-lg text-yellow-500">TAMALES</p>
+            <p class="text-lg">250.00 SRD</p>
+          </div>
+          <p class="font-light italic text-base">
+            Finely ground corn, exquisitely seasoned in the Cuban style.
+          </p>
+        </div>
+        <div class="flex flex-col">
+          <div class="flex justify-between items-center">
+            <p class="text-lg text-yellow-500">SPECIAL TAMALES</p>
             <p class="text-lg">120.00 SRD</p>
           </div>
           <p class="font-light italic text-base">
-            Delicious homemade chicken coquette made by the cheff
+            Finely ground corn, exquisitely seasoned Cuban-style, served with
+            your choice of roast pork, ropa vieja, or fried pork ribs, and
+            salad.
           </p>
         </div>
       </div>
     </section>
+    <section class="w-full flex flex-col justify-center items-center p-4 pt-8">
+      <img
+        src="https://addiellucena94.github.io/restaurant/cups.svg"
+        alt="Food icon"
+        class="w-20 h-20"
+      />
+    </section>
     <section class="w-full flex flex-col justify-center items-center px-4">
-      <h3 class="font-semibold text-xl mb-2">COFFEES</h3>
+      <h3 class="font-semibold text-xl mb-4">COFFEES</h3>
       <div
         class="border-t-gray-400 border-t-2 w-full py-3 flex flex-col gap-5 px-2"
       >
@@ -190,8 +610,8 @@ import "../styles/global.css";
         </div>
       </div>
     </section>
-    <section class="w-full flex flex-col justify-center items-center px-4">
-      <h3 class="font-semibold text-xl mb-2">DRINKS</h3>
+    <section class="w-full flex flex-col justify-center items-center px-4 pt-8">
+      <h3 class="font-semibold text-xl mb-4">DRINKS</h3>
       <div
         class="border-t-gray-400 border-t-2 w-full py-3 flex flex-col gap-5 px-2"
       >
@@ -239,8 +659,8 @@ import "../styles/global.css";
         </div>
       </div>
     </section>
-    <section class="w-full flex flex-col justify-center items-center px-4">
-      <h3 class="font-semibold text-xl mb-2">JUICES</h3>
+    <section class="w-full flex flex-col justify-center items-center px-4 pt-8">
+      <h3 class="font-semibold text-xl mb-4">JUICES</h3>
       <div
         class="border-t-gray-400 border-t-2 w-full py-3 flex flex-col gap-5 px-2"
       >
@@ -270,8 +690,8 @@ import "../styles/global.css";
         </div>
       </div>
     </section>
-    <section class="w-full flex flex-col justify-center items-center px-4">
-      <h3 class="font-semibold text-xl mb-2">BEERS</h3>
+    <section class="w-full flex flex-col justify-center items-center px-4 pt-8">
+      <h3 class="font-semibold text-xl mb-4">BEERS</h3>
       <div
         class="border-t-gray-400 border-t-2 w-full py-3 flex flex-col gap-5 px-2"
       >
@@ -319,8 +739,8 @@ import "../styles/global.css";
         </div>
       </div>
     </section>
-    <section class="w-full flex flex-col justify-center items-center px-4">
-      <h3 class="font-semibold text-xl mb-2">COCKTAILS</h3>
+    <section class="w-full flex flex-col justify-center items-center px-4 pt-8">
+      <h3 class="font-semibold text-xl mb-4">COCKTAILS</h3>
       <div
         class="border-t-gray-400 border-t-2 w-full py-3 flex flex-col gap-5 px-2"
       >
@@ -518,8 +938,8 @@ import "../styles/global.css";
         </div>
       </div>
     </section>
-    <section class="w-full flex flex-col justify-center items-center px-4">
-      <h3 class="font-semibold text-xl mb-2">WHISKEYS</h3>
+    <section class="w-full flex flex-col justify-center items-center px-4 pt-8">
+      <h3 class="font-semibold text-xl mb-4">WHISKEYS</h3>
       <div
         class="border-t-gray-400 border-t-2 w-full py-3 flex flex-col gap-5 px-2"
       >
@@ -591,8 +1011,8 @@ import "../styles/global.css";
         </div>
       </div>
     </section>
-    <section class="w-full flex flex-col justify-center items-center px-4">
-      <h3 class="font-semibold text-xl mb-2">VODKAS</h3>
+    <section class="w-full flex flex-col justify-center items-center px-4 pt-8">
+      <h3 class="font-semibold text-xl mb-4">VODKAS</h3>
       <div
         class="border-t-gray-400 border-t-2 w-full py-3 flex flex-col gap-5 px-2"
       >
@@ -616,8 +1036,8 @@ import "../styles/global.css";
         </div>
       </div>
     </section>
-    <section class="w-full flex flex-col justify-center items-center px-4">
-      <h3 class="font-semibold text-xl mb-2">TEQUILAS</h3>
+    <section class="w-full flex flex-col justify-center items-center px-4 pt-8">
+      <h3 class="font-semibold text-xl mb-4">TEQUILAS</h3>
       <div
         class="border-t-gray-400 border-t-2 w-full py-3 flex flex-col gap-5 px-2"
       >
@@ -647,8 +1067,8 @@ import "../styles/global.css";
         </div>
       </div>
     </section>
-    <section class="w-full flex flex-col justify-center items-center px-4">
-      <h3 class="font-semibold text-xl mb-2">LIQUORS</h3>
+    <section class="w-full flex flex-col justify-center items-center px-4 pt-8">
+      <h3 class="font-semibold text-xl mb-4">LIQUORS</h3>
       <div
         class="border-t-gray-400 border-t-2 w-full py-3 flex flex-col gap-5 px-2"
       >
@@ -678,8 +1098,8 @@ import "../styles/global.css";
         </div>
       </div>
     </section>
-    <section class="w-full flex flex-col justify-center items-center px-4">
-      <h3 class="font-semibold text-xl mb-2">COGNAC</h3>
+    <section class="w-full flex flex-col justify-center items-center px-4 pt-8">
+      <h3 class="font-semibold text-xl mb-4">COGNAC</h3>
       <div
         class="border-t-gray-400 border-t-2 w-full py-3 flex flex-col gap-5 px-2"
       >
@@ -697,8 +1117,8 @@ import "../styles/global.css";
         </div>
       </div>
     </section>
-    <section class="w-full flex flex-col justify-center items-center px-4">
-      <h3 class="font-semibold text-xl mb-2">RUMS</h3>
+    <section class="w-full flex flex-col justify-center items-center px-4 pt-8">
+      <h3 class="font-semibold text-xl mb-4">RUMS</h3>
       <div
         class="border-t-gray-400 border-t-2 w-full py-3 flex flex-col gap-5 px-2"
       >
@@ -736,8 +1156,8 @@ import "../styles/global.css";
         </div>
       </div>
     </section>
-    <section class="w-full flex flex-col justify-center items-center px-4">
-      <h3 class="font-semibold text-xl mb-2">WINES</h3>
+    <section class="w-full flex flex-col justify-center items-center px-4 pt-8">
+      <h3 class="font-semibold text-xl mb-4">WINES</h3>
       <div
         class="border-t-gray-400 border-t-2 w-full py-3 flex flex-col gap-5 px-2"
       >
